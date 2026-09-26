@@ -1,6 +1,10 @@
 # VISUAL BIBLE
 
-**Version 1.0 · LOCKED 2026-09-26**
+**Version 1.1 · LOCKED 2026-09-26**
+
+> **Amended v1.1:** primary aspect ratio is now **16:9 landscape** (was 9:16 vertical). Palette,
+> proportions, character locks and rejection criteria are **unchanged**. See
+> [master-bible.md](master-bible.md) amendment log.
 
 Derived directly from the canonical sheets in [../reference/](../reference/). Where a value here
 disagrees with a generated image, the generated image is wrong.
@@ -157,8 +161,9 @@ New locations require a bible entry before use.
 
 | Rule | Value |
 |---|---|
+| Aspect ratio | **16:9 landscape** *(amended v1.1)* |
 | Height | Character eye level. Never look down on them. |
-| Direct address | Centred, straight on, slightly low, face ≥25% of frame height |
+| Direct address | Centred, straight on, slightly low, face ≥25% of frame height — a genuine close-up in 16:9, not a wide shot with a small character centred |
 | Minimum shot length | 2.5s · 4s if there is dialogue |
 | Movement | Slow push, gentle arc, slow tilt, or locked off |
 | Banned | Whip pan, handheld, dutch angle, crash zoom, rack focus on action |
@@ -252,7 +257,7 @@ realistic animal anatomy, fast motion blur
 ### Video-specific additions
 
 - Duration: **5–8 seconds per shot** (generation sweet spot)
-- Aspect ratio: **9:16**
+- Aspect ratio: **16:9** *(amended v1.1)*
 - Motion: "slow gentle camera push", "locked off", "slow arc" — always specify, never leave to chance
 - Always pass `reference/eva-model-sheet.jpg` and/or `reference/cast-sheet.jpg` as image references
 - Apply the **Baby Eva Adventures** Artlist style kit to every generation

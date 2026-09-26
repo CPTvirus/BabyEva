@@ -1,6 +1,6 @@
 # BABY EVA ADVENTURES — MASTER BIBLE
 
-**Version 1.0 · LOCKED 2026-09-26**
+**Version 1.1 · LOCKED 2026-09-26**
 
 This document is the constitution of the show. Where any other document, prompt or generated asset
 disagrees with this one, **this one wins.** Nothing in Sections 4–6 (character, visual, audio
@@ -11,6 +11,14 @@ into this bible first, then used.
 > (character, visual, audio identity) change only by deliberate amendment recorded in this document
 > — never silently, and never by an individual episode. An episode that needs an exception amends
 > this bible first, then uses it.
+
+### Amendment log
+
+**v1.1 — 2026-09-26. Format change: long-form 16:9 replaces vertical Shorts.**
+Requested by Brendon. Changes §1 (delivery), §6 (composition), §11 (episode structure) and §12
+(interaction budget). Rationale and research basis are recorded in §11. Character, visual and audio
+identity (§4, §5, §7, §8, §9) are **unchanged** — the cast, palette, voices and music are exactly as
+locked at v1.0. Supersedes tag `bible-v1.0`; retagged `bible-v1.1`.
 
 > **The one rule above all others:** Baby Eva Adventures is not a collection of AI videos. It is a
 > long-term children's property. A child must be able to hear four notes of the theme, or see a
@@ -26,8 +34,8 @@ into this bible first, then used.
 | **Title** | Baby Eva Adventures |
 | **Logline** | A curious little plush mouse and her three friends turn every ordinary day into an adventure — and they need the children watching to help them finish it. |
 | **Format** | Animated 3D plush-toy world, episodic |
-| **Primary delivery** | YouTube Shorts — 9:16 vertical, 2:45–3:00 |
-| **Secondary delivery** | YouTube / YouTube Kids — 16:9, compiled multi-episode blocks |
+| **Primary delivery** | YouTube / YouTube Kids — **16:9 landscape, 11:00 per episode** |
+| **Secondary delivery** | 9:16 vertical cut-downs for Shorts, derived from the 16:9 master as promo |
 | **Cadence** | Alternating FUN / LEARNING, odd episodes FUN, even episodes LEARNING |
 | **Signature phrase** | **"Come on, little adventurers!"** |
 | **Theme hook** | **"Adventure starts with YOU!"** |
@@ -272,16 +280,22 @@ Faces are the content. Toddlers track eyes and mouths above all else.
 - Cuts are slow: minimum **2.5 seconds** on any shot, minimum **4 seconds** on a shot with dialogue
 - Camera moves are slow pushes, gentle arcs, or locked off — never handheld
 
-### 9:16 composition discipline
+### 16:9 composition discipline
 
-The primary format is vertical. This is a constraint, not an afterthought.
+The primary format is landscape. *(Amended v1.1 — was 9:16 vertical.)*
 
-- Compose for a **centre-weighted vertical column**; keep all story-critical action inside the
-  middle 80% vertically and the full width horizontally
-- Group shots stack or stagger characters in depth rather than spreading them horizontally
-- Leave headroom at the top for the logo bug and clear space at the bottom for captions
-- Shoot/generate every hero shot so a **16:9 centre crop still works** — protect the horizontal
-  centre for the future landscape cut
+- Compose **centre-weighted**, with story-critical action inside the middle 80% horizontally and
+  the middle 90% vertically — this protects both the TV-safe area and a future 9:16 crop
+- The extra horizontal room is for **staging, not clutter.** Backgrounds stay soft and simple;
+  width is used to place characters in relation to each other, never to add visual noise
+- Group shots stagger characters in **depth and height**, never in a flat horizontal line — a row
+  of four characters across frame reads as a line-up, not a scene
+- Leave headroom for the logo bug top-left and clear space along the bottom third for captions
+- Direct-address shots stay **tight**: Eva centred, face ≥25% of frame height. In 16:9 that means a
+  genuine close-up, not a wide shot with a small character in the middle. Resist the temptation to
+  fill the width — negative space around her face is correct
+- **Every hero shot must survive a 9:16 centre crop**, so the Shorts promo cut can be pulled from
+  the 16:9 master without reframing
 
 ---
 
@@ -382,20 +396,54 @@ slightly plush.
 
 ## 11. EPISODE STRUCTURE
 
-Every episode, without exception, follows these nine beats. The timings below are the 2:45–3:00
-Shorts target.
+*(Amended v1.1 — was nine beats at 2:45–3:00. The beats survive; they are now distributed across a
+segmented 11:00 runtime.)*
 
-| # | Beat | Duration | Purpose |
-|---|---|---|---|
-| 1 | **OPENING** | 0:20 | Theme song. Logo. The child settles in. |
-| 2 | **INTRODUCTION** | 0:18 | Eva greets the audience, names today's adventure. |
-| 3 | **PARTICIPATION** | 0:15 | Eva asks the children to come along. First interaction. |
-| 4 | **ADVENTURE** | 0:35 | The world opens up. Friends join. Exploration. |
-| 5 | **CHALLENGE** | 0:25 | Danny, or a situation, creates the obstacle. |
-| 6 | **THINKING MOMENT** | 0:25 | "Stop… Think… Look!" Eva asks the audience. **Pause.** |
-| 7 | **SOLUTION** | 0:20 | Solved together. Warm sparkle. |
-| 8 | **REINFORCEMENT** | 0:15 | The lesson, phrase or song repeats. |
-| 9 | **GOODBYE** | 0:15 | Closing song. Wave. Warm fade. |
+### Why 11:00
+
+Episode length is a child-development decision, not a distribution one.
+
+- **Sustained attention** in this age band runs roughly **2–3 minutes per year of age** — about 6–9
+  minutes at three, 8–12 at four. A single unbroken 11-minute demand would exceed that.
+- **Segmentation is what actually sustains attention.** Children attend to what they *comprehend*,
+  and a predictable repeating structure lets attention reset rather than decay. Blue's Clues held 22
+  minutes on heavy repetition; Bluey runs 7. The variable is structure, not duration.
+- **11:00 is the preschool broadcast standard** — two per 22-minute slot — which matters for future
+  licensing and for compiled YouTube blocks.
+
+So the episode is **three story segments with song breaks between them**, each segment carrying its
+own mini-cycle of setup → participation → resolution. No single demand on attention exceeds roughly
+two minutes before the child is either asked to do something or given a song.
+
+### The eleven-minute structure
+
+| # | Beat | In | Dur | Purpose |
+|---|---|---|---|---|
+| 1 | **COLD OPEN** | 0:00 | 0:25 | The star stirs. A hook before the titles. |
+| 2 | **TITLES** | 0:25 | 0:35 | Full theme song. Logo. The child settles in. |
+| 3 | **INTRODUCTION** | 1:00 | 0:45 | Eva greets the audience, names today's adventure. |
+| 4 | **PARTICIPATION** | 1:45 | 0:45 | Eva asks the children to come along. First interaction. |
+| 5 | **SEGMENT A — ADVENTURE** | 2:30 | 1:30 | The world opens up. Friends join. Exploration. |
+| 6 | **SONG BREAK 1** | 4:00 | 0:30 | Attention reset. Movement song. |
+| 7 | **SEGMENT B — CHALLENGE** | 4:30 | 1:30 | Danny, or a situation, creates the obstacle. |
+| 8 | **THINKING MOMENT** | 6:00 | 0:45 | "Stop… Think… Look!" Eva asks the audience. **Pause.** |
+| 9 | **SEGMENT C — THE SEARCH** | 6:45 | 1:45 | Looking together. The audience leads. |
+| 10 | **SOLUTION** | 8:30 | 1:00 | Solved together. Warm sparkle. |
+| 11 | **REINFORCEMENT** | 9:30 | 0:45 | The lesson, phrase or song repeats. |
+| 12 | **SONG BREAK 2** | 10:15 | 0:20 | Celebration reprise. |
+| 13 | **GOODBYE** | 10:35 | 0:25 | Closing song. Wave. Warm fade. Star dims. |
+
+**Total 11:00.**
+
+### The rules that scale with it
+
+- **No segment exceeds 1:45** without an interaction or a song intervening.
+- **Tension still never exceeds 30 seconds** — unchanged from v1.0, and more important at length,
+  not less. A longer episode means more opportunities to breach it.
+- **One problem per episode still.** An 11-minute runtime is not permission for a subplot. The extra
+  time goes into *dwelling* — more exploration, more play, more looking — not more plot.
+- **The audience still knows before Eva does**, and the gap between their knowing and her finding
+  out can now run several minutes. This is the single biggest gain from the longer format.
 
 **The structure is a feature, not a limitation.** A child who has seen four episodes knows the
 thinking moment is coming and starts to prepare for it. That anticipation is engagement.
@@ -436,8 +484,13 @@ really being asked.
 
 ### Interaction budget
 
-**Four to six interactive moments per episode.** Fewer and the child becomes passive; more and the
-moments stop feeling special.
+**Twelve to fifteen interactive moments per episode**, spaced so no stretch of screen time runs
+longer than about 50 seconds without the child being addressed. *(Amended v1.1 — was four to six, at
+the 3:00 runtime. The per-minute density is unchanged; only the runtime grew.)*
+
+Fewer and the child becomes passive; more and the moments stop feeling special. Density matters more
+than count: three questions in quick succession followed by four minutes of silence is worse than
+the same number spread evenly.
 
 ### The "they know first" technique
 
