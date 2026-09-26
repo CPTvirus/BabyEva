@@ -251,6 +251,18 @@ realistic animal anatomy, fast motion blur
 - Motion: "slow gentle camera push", "locked off", "slow arc" — always specify, never leave to chance
 - Always pass `reference/eva-model-sheet.jpg` and/or `reference/cast-sheet.jpg` as image references
 - Apply the **Baby Eva Adventures** Artlist style kit to every generation
+  — `kitId` **`1be17cde-4267-48df-94df-46cdb2a8cbd1`**
+
+### The style kit
+
+Created 2026-09-26. It carries the locked look so every generation inherits it without relying on
+the prompt alone: the full 37-colour palette, the four verbatim character locks, the render style
+and banned-element lists, the camera/lighting rules, the scale chart, and both canonical reference
+sheets as image references.
+
+**The kit is a safety net, not a substitute.** The mandatory eleven above still apply to every
+prompt, and reference images are still passed explicitly. If the kit and this document ever
+disagree, this document wins and the kit gets corrected.
 
 ---
 
