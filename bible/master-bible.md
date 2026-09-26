@@ -1,11 +1,17 @@
 # BABY EVA ADVENTURES — MASTER BIBLE
 
-**Version 1.0 · Locked 2026-09-26**
+**Version 0.9 · DRAFT — awaiting sign-off**
 
 This document is the constitution of the show. Where any other document, prompt or generated asset
 disagrees with this one, **this one wins.** Nothing in Sections 4–6 (character, visual, audio
 identity) may be changed by an individual episode. If an episode needs an exception, it gets written
 into this bible first, then used.
+
+> **Not yet locked.** This bible becomes v1.0 and locked only on Brendon's explicit sign-off. Until
+> then it is open for revision and nothing downstream should be treated as final. On locking: the
+> version goes to 1.0, the date is stamped, the commit is tagged `bible-v1.0`, and from that point
+> Sections 4–6 change only by deliberate amendment recorded here — never silently, and never by an
+> episode.
 
 > **The one rule above all others:** Baby Eva Adventures is not a collection of AI videos. It is a
 > long-term children's property. A child must be able to hear four notes of the theme, or see a
