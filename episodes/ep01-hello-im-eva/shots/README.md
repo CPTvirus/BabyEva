@@ -1,91 +1,58 @@
 # EPISODE 1 — SHOTS
 
-Generated against [visual-bible.md](../../../bible/visual-bible.md) **v1.1** (16:9) using style kit
-`1be17cde-4267-48df-94df-46cdb2a8cbd1`. Shot list: [shot-plan.md](../shot-plan.md).
+5:00 · 16:9 · 768p · against [shot-plan.md](../shot-plan.md) and bibles v1.2.
+Style kit `1be17cde-4267-48df-94df-46cdb2a8cbd1` + both reference sheets on every generation.
 
-**Pipeline, always in this order:** generate the still → check it against the rejection criteria →
-only then animate the approved still. Never animate an unchecked frame; a flaw in the still becomes
-a flaw in every frame of the video, at 7.7× the cost.
+**Pipeline:** generate the still → check it against the rejection criteria → only then animate.
+Never animate an unchecked frame.
 
-| Shot | Beat | File | Status |
-|---|---|---|---|
-| 3.1 | 3 — INTRODUCTION | [sh01-eva-hello.mp4](sh01-eva-hello.mp4) | Approved · 16:9 |
+## Approved
 
-*Shot numbering follows [shot-plan.md](../shot-plan.md). This was "shot 01" before the v1.1
-restructure; it is now beat 3, shot 1.*
+| Shot | Beat | File | Type | Credits |
+|---|---|---|---|---|
+| 1.1 | 1 Cold open | [sh1-1-evas-room-dawn.png](sh1-1-evas-room-dawn.png) | Still | 130 |
+| 3.1 | 3 Introduction | [sh01-eva-hello.mp4](sh01-eva-hello.mp4) | Video (Veo, reused) | 1,130 |
+| 5.1 | 5 Adventure | [sh5-1-garden-wide.png](sh5-1-garden-wide.png) | Still | 130 |
+| 10.3 | 10 Goodbye | [sh10-3-cosy-corner.png](sh10-3-cosy-corner.png) | Still | 130 |
 
----
+Locations are now locked. Every subsequent shot in Eva's Room, the Garden or the Cosy Corner must
+match these three frames.
 
-## Shot 3.1 — "Hello! I'm Eva."
+### What the location stills established
 
-Eva alone in her room, waving down the lens. The show's signature framing and the first shot of her
-a viewer will ever see.
+- **Eva's Room** — shelf height and position for the star, yellow curtains camera left, round pastel
+  rug, honey-wood floor, bunting line.
+- **The Garden** — the low stone-and-wood wall sits centre-foreground and reads clearly at a glance.
+  This matters: shots 5.4 (Eva sets the star down), 5.5 (Danny takes it) and the held empty-wall beat
+  all depend on the audience reading that surface instantly. Fence with gate behind, watering can
+  camera right, terracotta pots both sides.
+- **Cosy Corner** — green armchair centred, bookshelf camera left, table lamp camera right as the
+  warm key.
 
-**Still:** [sh01-eva-hello.png](sh01-eva-hello.png) · 2752×1536 · Nano Banana 2 · 130 credits
-`generationId` `01a0df20-d1b4-7987-8ea7-116ae61d577c`
+The Adventure Star is **faceless** in all three, per the locked spec. See the open question below.
 
-**Video:** [sh01-eva-hello.mp4](sh01-eva-hello.mp4) · 8s · 1920×1080 · Veo 3.1 Fast (`modelId` 1037)
-· 1,000 credits
-`generationId` `01a0df21-709b-7da8-a107-b5c8c9cb0a6e`
+## Standing prompt rules
 
-Settings: `aspect_ratio` 16:9, `duration` 8, `generate_audio` false, `resolution` 1080p.
-Audio is off deliberately — the show carries its own score and sound design per master bible §8–9.
+Learned from the shot 3.1 rejection. Every prompt, no exceptions:
 
-### Version history
-
-- **9:16 vertical originals** (still, rejected still and video) were generated under bibles v1.0 and
-  superseded by the v1.1 format change. They are preserved in git at commit `8c3c931` and are not
-  carried in the working tree.
-
-### The rejection that taught us the prompt rules
-
-The first attempt under v1.0 failed three rejection criteria and was **not** animated:
-
-1. **Whiskers** — three per side. Banned in visual bible §1 and §6 and listed in the standard
-   negative prompt, but the model added them anyway because "mouse" overrides a text instruction.
-2. **Visible teeth** — two front teeth. Master bible §6: teeth on no one but Danny.
-3. **Framing too wide** — face at ~14% of frame height against a ≥25% requirement.
-
-**What fixed it:** moving the bans out of the trailing negative list and into the body of the prompt
-as emphatic positive statements — "her cheeks and muzzle are completely smooth, no whisker strands",
-"NO TEETH ARE VISIBLE AT ALL" — plus stating the framing as a shot type ("chest-up close portrait")
-rather than as a percentage. **A negative prompt does not beat a strong semantic prior.**
-
-The 16:9 version added a third rule: **landscape needs an explicit negative-space instruction**
-("soft empty defocused room to left and right, do not fill the width") or the model fills the extra
-width with clutter that competes with her face.
-
-All three rules are now standing requirements in [shot-plan.md](../shot-plan.md).
-
----
+- **Whiskers and teeth get an explicit positive sentence in the prompt body**, not just the negative
+  list. A negative prompt does not beat the semantic prior of "mouse".
+- **Framing is stated as a shot type**, not a percentage.
+- **16:9 needs an explicit negative-space instruction**, or the model fills the width with clutter.
+- Paste the character lock **verbatim** from the visual bible.
+- Generate stills at **2K** — they cost 130 at every resolution, so there is no reason to go smaller,
+  and the extra pixels give room to push and crop in the edit.
 
 ## Open design question — the Adventure Star's face
 
-The original rejected still rendered the Adventure Star on the shelf with a **sleeping face** —
-closed eyes, blush, a small smile. It's charming and it fits the bible's "settles back to a soft,
-sleepy dim", but **it is not in the locked spec**, which describes only "a soft plush five-pointed
-star, `#FFCE5A`, roughly the size of Eva's head, with a gentle inner glow."
+An early rejected still rendered the star with a **sleeping face** (closed eyes, blush, small smile).
+Charming, and it fits "settles back to a soft, sleepy dim" — but **not in the locked spec**, which
+describes only "a soft plush five-pointed star, `#FFCE5A`, with a gentle inner glow."
 
-The bibles are locked, so this cannot be adopted silently. It needs either a deliberate amendment to
-[visual-bible.md §4](../../../bible/visual-bible.md) or a decision to keep the star faceless.
+Generating faceless by default. Changing it now means re-rolling the star in every shot it appears
+in — 1.1, 1.2, 3.2, 3.3, 4.3, 5.4, 9.4, 10.1 and 10.3 — so decide before those are generated.
 
-**Still open. Decide before the star appears in any approved shot** — it is a merchandisable
-franchise object and a face changes what it is. The star appears in shots 1.1, 1.2, 3.4, 3.5, 3.6,
-5.8, 10.8, 10.9, 12.1, 13.1 and 13.4, so this blocks a meaningful chunk of the episode.
+## Budget
 
----
-
-## Costs
-
-| Item | Credits |
-|---|---|
-| 9:16 still v1 (rejected, superseded) | 130 |
-| 9:16 still v2 (superseded by format change) | 130 |
-| 9:16 video (superseded by format change) | 1,000 |
-| **16:9 still (current)** | **130** |
-| **16:9 video (current)** | **1,000** |
-| **Total spent on this shot** | **2,390** |
-
-The 1,260 spent on the 9:16 version was lost to the format change, not to error. Worth noting as the
-cost of settling format before generating rather than after — the full-episode equivalent of that
-mistake would have been ~43,000 credits.
+Cap **6,755**. Spent **390** on locations. **6,365** remaining, against a planned **5,910** for the
+27 outstanding shots (26 stills + 4 video, less the 3 done) — leaving ~455 for rejections.
