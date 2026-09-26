@@ -329,9 +329,21 @@ Characters speak *simply*, not *babyishly*. Children are learning language from 
 Music is not decoration here. It is the strongest memory hook the show has, and the fastest route to
 a child recognising the brand.
 
+**Selected 2026-09-26 by Brendon:** the main theme is **v2b, the call-and-response take**
+([audio/theme-v2b-call-response.mp3](../audio/theme-v2b-call-response.mp3)). Its melody is now
+locked per rule 1 below. The two spare takes are assigned to the song breaks introduced in v1.1 —
+they share the theme's melodic family, so the episode stays musically unified rather than
+introducing new tunes:
+
+| Track | Use |
+|---|---|
+| **v2b — call and response** | **Main theme.** Titles (beat 2) and the goodbye reprise (beat 13) |
+| **v2c — clap-along** | Song break 1 (beat 6) — the movement song, mid-episode attention reset |
+| **v2a — chant** | Song break 2 (beat 12) — the celebration reprise after the solution |
+
 | Cue | Purpose | Character |
 |---|---|---|
-| **Main theme** | Opening title, ~20s | Bright, repetitive, singable, ukulele + glockenspiel |
+| **Main theme** | Opening title, ~35s *(amended v1.1)* | Bright, repetitive, singable, ukulele + glockenspiel |
 | **Eva motif** | Eva appears / adventure begins | 4 notes rising, celesta + soft uke |
 | **Mr Rabit cue** | Mr Rabit appears / thinking moment | Warm descending clarinet, unhurried |
 | **Danny cue** | Danny appears / mischief afoot | Comic staccato bassoon, woodblock, slide whistle |
