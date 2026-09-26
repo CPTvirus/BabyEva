@@ -1,10 +1,35 @@
 # VISUAL BIBLE
 
-**Version 1.1 · LOCKED 2026-09-26**
+**Version 1.2 · LOCKED 2026-09-26**
 
-> **Amended v1.1:** primary aspect ratio is now **16:9 landscape** (was 9:16 vertical). Palette,
-> proportions, character locks and rejection criteria are **unchanged**. See
+> **Amended v1.1:** primary aspect ratio is now **16:9 landscape** (was 9:16 vertical).
+> **Amended v1.2:** delivery resolution is **768p**; episode runtime 5:00. Palette, proportions,
+> character locks and rejection criteria are **unchanged** throughout. See
 > [master-bible.md](master-bible.md) amendment log.
+
+### Production economics — read before generating anything
+
+Prices confirmed by quote 2026-09-26. These drive how shots are planned, not just what they cost.
+
+| | Cost | Per second |
+|---|---|---|
+| **Still** (Nano Banana 2, any resolution 512px–4K) | **130** | ~16 at an 8s hold |
+| **Video** — Hailuo 2.3 Fast, 6s @ 768p | **600** | 100 |
+| **Video** — Veo 3.1 Fast, 8s @ 720p *or* 1080p | **1,000** | 125 |
+
+Three consequences:
+
+1. **Stills cost the same at every resolution.** Always generate at 2K or 4K — there is no saving in
+   going lower, and a higher-resolution still gives room to push and crop in the edit.
+2. **Veo Fast costs the same at 720p and 1080p.** Dropping Veo's resolution saves nothing; changing
+   *model* is what saves.
+3. **A still held for 8 seconds is roughly six times cheaper per second of runtime than video.**
+   Runtime is bought with stills; motion is bought with video. Plan shots accordingly, and spend
+   video only where something genuinely moves.
+
+**This is also a craft rule, not only a budget one.** The pause protocol requires Eva to hold still
+and wait. Generated motion during a pause pulls a child's attention away from answering — so a held
+frame is both cheaper *and* correct there.
 
 Derived directly from the canonical sheets in [../reference/](../reference/). Where a value here
 disagrees with a generated image, the generated image is wrong.
@@ -258,6 +283,8 @@ realistic animal anatomy, fast motion blur
 
 - Duration: **5–8 seconds per shot** (generation sweet spot)
 - Aspect ratio: **16:9** *(amended v1.1)*
+- Resolution: **768p** delivery *(amended v1.2)* — default video model is **Hailuo 2.3 Fast
+  Standard**, `modelId` 2034, 6s @ 768p
 - Motion: "slow gentle camera push", "locked off", "slow arc" — always specify, never leave to chance
 - Always pass `reference/eva-model-sheet.jpg` and/or `reference/cast-sheet.jpg` as image references
 - Apply the **Baby Eva Adventures** Artlist style kit to every generation

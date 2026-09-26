@@ -1,246 +1,179 @@
-# EPISODE 1 — SHOT-BY-SHOT PRODUCTION PLAN
+# EPISODE 1 — SHOT PLAN & BUDGET
 
-**11:00 · 16:9 · 93 shots** · against [episode-bible.md](episode-bible.md) and
-[visual-bible.md](../../bible/visual-bible.md) v1.1
+**5:00 · 16:9 · 768p · 35 shots · 6,300 credits**
 
-Style kit `1be17cde-4267-48df-94df-46cdb2a8cbd1` on every generation. Both reference sheets passed
-every time.
-
----
-
-## THE COST-SAVING METHOD — read this first
-
-A naive read of this plan is "93 video generations × 1,000 credits = 93,000." That is how you make
-an episode impossible. It is also not how preschool animation is actually cut.
-
-**Two shot types:**
-
-| Type | What it is | Cost | Use for |
-|---|---|---|---|
-| **V** — generated video | 8s of real motion from Veo 3.1 Fast | **1,000** | Anything where a character moves meaningfully: walking, waving, hopping, handing something over, the reveal |
-| **S** — still + post motion | One generated frame, given a slow digital push/drift in the edit | **130** | Held dialogue, reaction beats, establishing shots, cutaways, the pause protocol |
-
-**A still is 7.7× cheaper than a video shot.** The pause protocol alone — 16 pauses of 3 seconds
-each, where Eva deliberately holds still and waits — is nearly a minute of runtime that wants a held
-frame, not generated motion. Using video there would be both wasteful and *wrong*, because generated
-motion during a pause pulls the child's attention away from answering.
-
-**Target split: 35 V / 58 S.** Budget at that split: **42,540 credits.**
-
-Where a held shot needs life, the fix is a 2-second blink cycle generated once per character per
-location and reused across every still in that scene — not a fresh video per shot.
+Against [episode-bible.md](episode-bible.md) and [visual-bible.md](../../bible/visual-bible.md)
+v1.2. Style kit `1be17cde-4267-48df-94df-46cdb2a8cbd1` and both reference sheets on every
+generation.
 
 ---
 
-## BEAT 1 — COLD OPEN (0:00–0:25) · 4 shots
+## BUDGET
 
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 1.1 | S | 6s | Eva's Room, dawn. Wide-ish establishing, star on shelf dim | Slow push. Very quiet mix |
-| 1.2 | V | 5s | CU the Adventure Star. It pulses warm, chimes | The first time the star does anything |
-| 1.3 | V | 7s | Eva curled asleep on the rug. Ears twitch. She lifts her head | Sleepy, slow |
-| 1.4 | S | 7s | CU Eva, direct address — *"Did you see that?"* | Pause built in. Face ≥25% |
-
-## BEAT 2 — TITLES (0:25–1:00) · 6 shots
-
-Cut to theme v2b. On each **"Who's that?"** a character pops in; on each **"BA-BY E-VA!"** Eva lands.
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 2.1 | V | 6s | Eva pops in, arms up, logo forms | Hero title shot |
-| 2.2 | V | 5s | Mr Rabit pops in, adjusts spectacles | |
-| 2.3 | V | 5s | Danny pops in, huge grin, waves | Establish him as fun before he's ever an obstacle |
-| 2.4 | V | 5s | Little Bunny pops in mid-hop | |
-| 2.5 | V | 7s | All four together, staggered in depth, star above | Silhouette rule applies |
-| 2.6 | S | 7s | Logo card, star glinting | Title graphic |
-
-## BEAT 3 — INTRODUCTION (1:00–1:45) · 6 shots
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 3.1 | V | 8s | CU Eva direct address — *"Hello! I'm Eva."* | **Shot 01, already generated** |
-| 3.2 | S | 7s | Eva waits, blinking, expectant | The pause |
-| 3.3 | V | 7s | Eva turns, camera follows her look to the shelf | Motion motivated by her head turn |
-| 3.4 | S | 8s | CU the star on the shelf, slow push | *"This is my Adventure Star"* |
-| 3.5 | V | 8s | Eva lifts the star down, both paws, careful | Establishes it as precious |
-| 3.6 | S | 7s | Eva holding star, direct address — *"Can you see it?"* | Pause |
-
-## BEAT 4 — PARTICIPATION (1:45–2:30) · 5 shots
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 4.1 | V | 8s | CU Eva — *"Can you wave hello?"* then waves | |
-| 4.2 | S | 8s | Eva holds, waiting, encouraging | **The pause. Do not cut** |
-| 4.3 | V | 8s | Eva reacts — *"I saw that! Hello!"* | Genuine delight |
-| 4.4 | S | 10s | Eva hugs star — *"Will you come with me?"* | Pause |
-| 4.5 | V | 8s | Eva turns to the door, looks back, beckons — *"Come on, little adventurers!"* | Key phrase use 1 |
-
-## BEAT 5 — SEGMENT A: ADVENTURE (2:30–4:00) · 12 shots
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 5.1 | V | 8s | Eva steps out into the garden, star in both paws | Reveal the garden |
-| 5.2 | S | 7s | Wide garden establishing, golden morning | Reused later as a cutaway |
-| 5.3 | V | 8s | Little Bunny bursts in hopping | Her signature — whole-body joy |
-| 5.4 | S | 7s | Eva direct address — *"Can you say hello to Little Bunny?"* | Pause |
-| 5.5 | V | 7s | Little Bunny bounces — *"They said hello to me!"* | |
-| 5.6 | V | 8s | Mr Rabit at the fence, kneels to their height | Establishes he always kneels |
-| 5.7 | S | 7s | Two-shot Eva + Mr Rabit, he admires the star | Depth-staggered |
-| 5.8 | **V** | 8s | **Eva sets the star on the low wall** | **Load-bearing — the audience must clock where it is** |
-| 5.9 | V | 8s | Bunny hopping among the flowers, butterfly loops past | Play, no plot |
-| 5.10 | S | 7s | Eva direct address — *"Can you see the butterfly?"* | Pause |
-| 5.11 | **V** | 8s | **★ Danny tiptoes in, hides behind the too-small pot, spike snags a leaf, finger to lips to camera, takes the star** | **The most important shot in the episode.** Comic, never menacing |
-| 5.12 | S | 7s | **Hold on the empty wall.** 3 full seconds | Let the child register it |
-
-## BEAT 6 — SONG BREAK 1 (4:00–4:30) · 5 shots
-
-Clap-along, v2c. Keep the **empty wall softly in frame** throughout — the child sees it, nobody on
-screen does.
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 6.1 | V | 6s | Eva clapping to camera — *"Can you clap with me?"* | |
-| 6.2 | V | 6s | Bunny hopping in rhythm | |
-| 6.3 | V | 6s | Mr Rabit doing a dignified little stomp | Comedy of restraint |
-| 6.4 | V | 6s | Wide — all three dancing, **empty wall visible behind** | The joke |
-| 6.5 | S | 6s | Group freeze on the last beat | |
-
-## BEAT 7 — SEGMENT B: CHALLENGE (4:30–6:00) · 12 shots
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 7.1 | V | 8s | Eva turns to the wall beaming — *"come and see my Adventure St—"* | |
-| 7.2 | **V** | 7s | Her face falls. Ears drop. Brows **up**, not down | **Puzzled, never distressed.** Gets this wrong and the pilot fails |
-| 7.3 | S | 7s | The empty wall, her POV | |
-| 7.4 | V | 7s | Bunny — *"It was right HERE!"* | |
-| 7.5 | S | 8s | Eva to camera — *"Did you see where it went?"* | Pause. Interactive moment 9 |
-| 7.6 | V | 7s | Eva's small gasp — *"Uh-oh… Danny!"* | The recognition beat |
-| 7.7 | V | 8s | Eva looks under the fence | **Wrong guess 1** |
-| 7.8 | S | 6s | Nothing there | |
-| 7.9 | V | 7s | Bunny searching — *"Not here!"* | |
-| 7.10 | V | 8s | Eva looks in the flowers | **Wrong guess 2** |
-| 7.11 | S | 7s | Eva sits down on the grass, thinking not sad | |
-| 7.12 | V | 8s | Mr Rabit approaches and kneels | Sets up the method |
-
-## BEAT 8 — THINKING MOMENT (6:00–6:45) · 7 shots
-
-The show's catechism, performed for the first time. Slow. One gesture per word.
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 8.1 | V | 7s | Mr Rabit — *"When something is lost, what do we do?"* | |
-| 8.2 | **V** | 6s | **"We STOP…"** — open palm, held | |
-| 8.3 | **V** | 6s | **"…we THINK…"** — finger to temple, held | |
-| 8.4 | **V** | 6s | **"…and we LOOK!"** — hand shading eyes, held | |
-| 8.5 | S | 8s | Mr Rabit to camera — *"Can you do it with me?"* | Pause 4s. Children copy |
-| 8.6 | V | 6s | Eva stands, straightens, turns to lens | |
-| 8.7 | **S** | 8s | **CU Eva — *"Can you help me? Where should we look?"*** | **The biggest pause in the episode. 4s. No cut** |
-
-## BEAT 9 — SEGMENT C: THE SEARCH (6:45–8:30) · 14 shots
-
-Warm and playful, never tense. The audience leads; Eva follows.
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 9.1 | V | 8s | Eva brightens — *"Behind the flowerpot? Let's look together!"* | Key phrase use 2 |
-| 9.2 | V | 8s | Checking the watering can | |
-| 9.3 | S | 6s | Empty — Bunny: *"Nothing in here!"* | |
-| 9.4 | V | 8s | Looking under the big felt sunflower | |
-| 9.5 | V | 8s | Eva distracted by a beetle — pure dwelling | This is what 11 minutes is *for* |
-| 9.6 | S | 7s | CU the beetle, absurdly charming | |
-| 9.7 | V | 8s | Mr Rabit steers without solving — *"what is big enough to hide a star?"* | Never gives the answer |
-| 9.8 | V | 8s | Slow pan across the garden with Eva's gaze | Motion motivated by her look |
-| 9.9 | S | 8s | Eva to camera — *"Can you see something green?"* | Pause |
-| 9.10 | **S** | 8s | **The flowerpot — green tail and purple spikes plainly visible** | Hold. Let them shout |
-| 9.11 | V | 7s | Eva — *"Is that… is that a TAIL?"* | |
-| 9.12 | V | 7s | Bunny whispering — *"I think it's wiggling"* | |
-| 9.13 | V | 8s | Tiptoeing toward the pot, exaggerated, comic | Playful-sneaky music, never scary |
-| 9.14 | S | 8s | Eva whispers to camera — *"Should we look behind it?"* then *"one… two… three!"* | Pause |
-
-## BEAT 10 — SOLUTION (8:30–9:30) · 9 shots
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 10.1 | **V** | 8s | **Reveal — Danny crouched behind a pot a quarter his size, holding the star** | The laugh |
-| 10.2 | V | 6s | Danny freezes, caught — *"…Hello."* | |
-| 10.3 | **S** | 8s | **CU Danny, looking at the ground — *"I just wanted you to come and find me"*** | **The most important line in the episode. No music under it** |
-| 10.4 | V | 7s | Eva, delighted not scolding — *"You could have just ASKED!"* | |
-| 10.5 | V | 6s | Danny, small — *"…Could I?"* | |
-| 10.6 | V | 7s | Eva — *"Do you want to play with us?"* | |
-| 10.7 | **V** | 7s | **Danny's whole body lifts — *"REALLY?"*** | The turn. Pure joy |
-| 10.8 | **V** | 8s | **Danny hands the star back himself. Warm sparkle bloom** | He must give it, not have it taken |
-| 10.9 | **V** | 8s | **The star pulses… then GLOWS** | Franchise moment |
-
-## BEAT 11 — REINFORCEMENT (9:30–10:15) · 6 shots
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 11.1 | V | 8s | Eva to camera, glowing star held up — *"We did it — together!"* | Use 1 |
-| 11.2 | V | 7s | Bunny — *"Together!"* | Use 2 |
-| 11.3 | **V** | 7s | Danny, shyly — *"…Together?"* / Eva: *"Together!"* | Use 3. His acceptance |
-| 11.4 | S | 8s | Four-shot, staggered depth — Danny back, Bunny forward | Silhouette rule |
-| 11.5 | S | 8s | Eva — *"We couldn't have done it without you"* | Pause |
-| 11.6 | S | 7s | *"Can you clap for Danny?"* → Danny: *"They're clapping for ME"* | Pause. His payoff |
-
-## BEAT 12 — SONG BREAK 2 (10:15–10:35) · 3 shots
-
-Celebration chant, v2a.
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 12.1 | V | 7s | All four celebrating, star glowing between them | **Danny centre-group, not at the edge** |
-| 12.2 | V | 7s | Eva and Danny together, both delighted | Seals the friendship |
-| 12.3 | S | 6s | Wide garden, golden, group small in frame | Breathe out |
-
-## BEAT 13 — GOODBYE (10:35–11:00) · 4 shots
-
-Everything winds down. Often watched before sleep.
-
-| # | Type | Len | Shot | Notes |
-|---|---|---|---|---|
-| 13.1 | S | 7s | Cosy Corner, lamp on, Eva in the armchair, star dimming in her lap | Warm, low |
-| 13.2 | S | 8s | CU Eva — *"Will you come back?"* | Pause |
-| 13.3 | V | 6s | All four wave; Eva waves last, alone, close — *"Bye bye, little adventurers!"* | Key phrase use 3 |
-| 13.4 | V | 4s | Star placed on the shelf, dims to sleep. Warm fade | Button: *"Adventure starts with YOU!"* |
-
----
-
-## TALLY
+**Cap: 6,755 credits** — half of the 13,510 available. Planned spend **6,300**, leaving **455** for
+rejections (roughly three re-rolled stills).
 
 | | Count | Unit | Credits |
 |---|---|---|---|
-| Video shots (V) | 35 | 1,000 | 35,000 |
-| Still shots (S) | 58 | 130 | 7,540 |
-| **Total** | **93** | | **42,540** |
+| Video — Hailuo 2.3 Fast, 6s @ 768p (`modelId` 2034) | 4 | 600 | 2,400 |
+| Stills — Nano Banana 2, 2K (`modelId` 2247) | 30 | 130 | 3,900 |
+| Video already generated and reused | 1 | 0 | 0 |
+| **Total** | **35** | | **6,300** |
 
-Plus a contingency for rejections. Shot 01 took two stills to pass, so budget roughly **20% reject
-overhead → ~51,000 credits** for a fully generated episode.
+### What was cut to get here, and why
 
-**Already generated:** shot 3.1 (`01a0df21-709b-7da8-a107-b5c8c9cb0a6e`) and its still.
+| Cut | Saved | Reasoning |
+|---|---|---|
+| Runtime 11:00 → 5:00 | ~36,000 | The big one. 5:00 is Peppa's length and better suits a 1–4 audience anyway |
+| Two song breaks (8 video shots) | 4,800 | An 11:00 attention-reset device. Not needed at 5:00 |
+| Titles: 5 video character-pops → 3 stills | 4,610 | The song carries the titles. Motion adds nothing a card doesn't |
+| Veo 3.1 Fast → Hailuo 2.3 Fast | 400/shot | Same job at 768p for 600 instead of 1,000 |
+| The beetle dwelling shot, second watering-can angle, group freeze | 1,800 | Pure dwelling. Affordable at 11:00, indefensible at 5:00 |
+| Reuse of existing shot 3.1 | 1,000 | Already generated and approved |
+
+**Not cut:** every pause, every interactive moment, Danny's soft moment, and all three "Stop… Think…
+Look!" gesture beats. Those are the show. Cutting them would save credits and destroy the property.
+
+---
+
+## SHOT LIST
+
+**V** = generated video (Hailuo, 6s, 600cr) · **S** = still + post motion in the edit (130cr)
+
+### Beat 1 — COLD OPEN (0:00–0:20) · 3 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 1.1 | S | 7s | Eva's Room at dawn, wide. Star dim on the shelf. Slow push. Very quiet mix |
+| 1.2 | S | 6s | CU the Adventure Star. **Pulse and glow added in post** — no generation needed |
+| 1.3 | S | 7s | CU Eva lifting her head, sleepy — *"Did you see that?"* Pause built in |
+
+### Beat 2 — TITLES (0:20–0:45) · 3 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 2.1 | S | 8s | Character card: Mr Rabit and Little Bunny, staggered. Logo |
+| 2.2 | S | 8s | Character card: Danny, huge grin, waving. **Establishes him as fun before he is ever an obstacle** |
+| 2.3 | S | 9s | Hero title card: Eva centre, star above, logo |
+
+### Beat 3 — INTRODUCTION (0:45–1:15) · 1 video (reused) + 2 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 3.1 | **V·reuse** | 8s | CU Eva direct address — *"Hello! I'm Eva."* **Already generated, 0 credits** |
+| 3.2 | S | 11s | CU the star on the shelf, slow push — *"This is my Adventure Star"* |
+| 3.3 | S | 11s | Eva looking up at it, warm — *"when it glows, an adventure is starting"* |
+
+### Beat 4 — PARTICIPATION (1:15–1:40) · 3 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 4.1 | S | 8s | CU Eva mid-wave — *"Can you wave hello?"* **The pause. Do not cut** |
+| 4.2 | S | 8s | Eva reacting, delighted — *"I saw that! Hello!"* |
+| 4.3 | S | 9s | Eva holding the star, turning to go — *"Come on, little adventurers!"* |
+
+### Beat 5 — ADVENTURE (1:40–2:25) · 1 video + 4 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 5.1 | S | 9s | Garden wide, golden morning. Establishing. **Reused as a cutaway later** |
+| 5.2 | S | 10s | Little Bunny mid-hop, whole-body joy — *"Eva! You're here!"* |
+| 5.3 | S | 10s | Mr Rabit kneeling at the fence — *"Good morning, you two"* |
+| 5.4 | S | 10s | **Eva sets the star on the low wall.** The audience must clock where it is |
+| 5.5 | **V** | 6s | **★ Danny tiptoes in, hides behind the too-small pot, finger to lips to camera, takes the star.** The most important shot in the episode |
+
+### Beat 6 — CHALLENGE (2:25–3:00) · 4 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 6.1 | S | 9s | Eva turning, face falling. Ears down, **brows up not down.** Puzzled, never distressed |
+| 6.2 | S | 8s | The empty wall, her POV |
+| 6.3 | S | 9s | Eva to camera — *"Did you see where it went?"* Pause |
+| 6.4 | S | 9s | Eva sitting on the grass, thinking not sad. Mr Rabit approaching |
+
+*Wrong guesses 1 and 2 are covered in 6.1–6.2 with a cutaway to 5.1 and VO.*
+
+### Beat 7 — THINKING MOMENT (3:00–3:30) · 1 video + 2 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 7.1 | **V** | 6s | **Mr Rabit performs "Stop… Think… Look!"** — all three gestures, one per word, held. The show's catechism, first performance |
+| 7.2 | S | 12s | Mr Rabit to camera — *"Can you do it with me?"* Pause, he repeats it |
+| 7.3 | S | 12s | **CU Eva — *"Can you help me? Where should we look?"*** The biggest pause in the episode. 4s. No cut |
+
+### Beat 8 — THE SEARCH (3:30–4:05) · 4 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 8.1 | S | 9s | Eva brightening — *"Let's look together!"* |
+| 8.2 | S | 8s | Checking the watering can. Empty |
+| 8.3 | S | 9s | Eva to camera — *"Can you see something green?"* Pause |
+| 8.4 | S | 9s | **The flowerpot — green tail and purple spikes plainly visible.** Hold. Let them shout |
+
+### Beat 9 — SOLUTION (4:05–4:35) · 2 video + 2 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 9.1 | **V** | 6s | **Reveal — Danny crouched behind a pot a quarter his size, caught, holding the star.** The laugh |
+| 9.2 | S | 9s | **CU Danny looking at the ground — *"I just wanted you to come and find me."*** No music under it |
+| 9.3 | S | 9s | Eva delighted, not scolding — *"Do you want to play with us?"* |
+| 9.4 | **V** | 6s | **Danny hands the star back himself. Sparkle bloom. It pulses, then GLOWS.** Franchise moment |
+
+### Beat 10 — REINFORCEMENT + GOODBYE (4:35–5:00) · 3 stills
+
+| # | T | Len | Shot |
+|---|---|---|---|
+| 10.1 | S | 8s | Four-shot, staggered in depth. Danny back (biggest), Bunny forward (smallest). Star glowing between them |
+| 10.2 | S | 8s | Eva to camera — *"We couldn't have done it without you."* Pause |
+| 10.3 | S | 9s | Cosy Corner. Eva in the armchair, star dimming in her lap — *"Bye bye, little adventurers!"* Warm fade |
+
+---
+
+## TOTALS
+
+| Beat | V | S | Runtime |
+|---|---|---|---|
+| 1 Cold open | 0 | 3 | 0:20 |
+| 2 Titles | 0 | 3 | 0:25 |
+| 3 Introduction | 1* | 2 | 0:30 |
+| 4 Participation | 0 | 3 | 0:25 |
+| 5 Adventure | 1 | 4 | 0:45 |
+| 6 Challenge | 0 | 4 | 0:35 |
+| 7 Thinking | 1 | 2 | 0:30 |
+| 8 Search | 0 | 4 | 0:35 |
+| 9 Solution | 2 | 2 | 0:30 |
+| 10 Reinforcement + goodbye | 0 | 3 | 0:25 |
+| **Total** | **5** (4 new) | **30** | **5:00** |
+
+\* reused, 0 credits
+
+---
 
 ## GENERATION ORDER
 
-Do not generate in script order. Generate in this order so problems surface cheaply:
+Generate in this order so problems surface while they are still cheap:
 
-1. **One still per location** — Eva's Room, Garden, Cosy Corner. Locks the environments.
-2. **One still per character** in the garden. Proves the cast holds at 16:9 and validates the
-   silhouette rule on the Mr Rabit / Little Bunny pair before 90 shots depend on it.
-3. **The four load-bearing video shots** — 5.11 (Danny takes it), 8.2–8.4 (Stop/Think/Look),
-   10.3 (Danny's line), 10.8–10.9 (handback and glow). If these don't work the episode doesn't work,
-   and they cost ~6,000 to find out.
-4. Everything else, beat by beat.
+1. **Three location stills** — 1.1 Eva's Room, 5.1 Garden, 10.3 Cosy Corner. Locks the environments
+   for everything else. **390 credits.**
+2. **Three cast stills** — 5.2 Little Bunny, 5.3 Mr Rabit, 2.2 Danny. Proves the cast holds at 16:9
+   and validates the silhouette rule on the Mr Rabit / Little Bunny pair before 30 shots depend on
+   it. **390 credits.**
+3. **The four video shots** — 5.5, 7.1, 9.1, 9.4. If these don't work the episode doesn't work, and
+   it costs 2,400 to find out rather than 6,300.
+4. **Everything else**, beat by beat.
 
 ## STANDING PROMPT RULES
 
-From the shot 01 rejection, applied to every prompt without exception:
+Learned from the shot 3.1 rejection. Apply to every prompt without exception:
 
 - **Whiskers and teeth get an explicit positive sentence in the prompt body**, not just the negative
-  list. "Her cheeks and muzzle are completely smooth, no whisker strands." "NO TEETH ARE VISIBLE AT
-  ALL." A negative prompt does not beat the semantic prior of "mouse".
-- **Framing is stated as a shot type**, not a percentage. "Chest-up close portrait", not "face 25%
-  of frame".
-- **16:9 needs explicit negative space instruction** — "soft empty defocused room to left and right,
-  do not fill the width" — or the model fills the extra width with clutter.
-- Paste the character lock verbatim from the visual bible. Never paraphrase.
-- Check every generated still against the rejection criteria **before** animating it. A flaw in the
-  still becomes a flaw in every frame, at 7.7× the cost.
+  list. *"Her cheeks and muzzle are completely smooth, no whisker strands."* *"NO TEETH ARE VISIBLE
+  AT ALL."* A negative prompt does not beat the semantic prior of "mouse".
+- **Framing is stated as a shot type**, not a percentage. "Chest-up close portrait", not "face 25%".
+- **16:9 needs an explicit negative-space instruction** — *"soft empty defocused room to left and
+  right, do not fill the width"* — or the model fills the width with clutter.
+- Paste the character lock **verbatim** from the visual bible. Never paraphrase.
+- **Check every still against the rejection criteria before animating it.** A flaw in the still
+  becomes a flaw in every frame at 4.6× the cost.
+- Generate stills at **2K** — they cost 130 at every resolution, and the extra pixels give room to
+  push and crop in the edit. There is no reason to generate small.

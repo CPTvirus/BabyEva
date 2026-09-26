@@ -1,6 +1,6 @@
 # BABY EVA ADVENTURES — MASTER BIBLE
 
-**Version 1.1 · LOCKED 2026-09-26**
+**Version 1.2 · LOCKED 2026-09-26**
 
 This document is the constitution of the show. Where any other document, prompt or generated asset
 disagrees with this one, **this one wins.** Nothing in Sections 4–6 (character, visual, audio
@@ -20,6 +20,17 @@ Requested by Brendon. Changes §1 (delivery), §6 (composition), §11 (episode s
 identity (§4, §5, §7, §8, §9) are **unchanged** — the cast, palette, voices and music are exactly as
 locked at v1.0. Supersedes tag `bible-v1.0`; retagged `bible-v1.1`.
 
+**v1.2 — 2026-09-26. Runtime 11:00 → 5:00. Delivery spec 768p.**
+Requested by Brendon, driven by production budget. Changes §1, §11 and §12.
+
+This is a constraint-led change, but it lands somewhere defensible rather than compromised. **5:00
+is Peppa Pig's length** — the dominant property in exactly this 1–4 age band — and it sits
+comfortably inside the attention window for the *younger* half of our audience, where 11:00 sat at
+the top of it for the older half. Given the primary target is 1–4 rather than 4–6, 5:00 is arguably
+the better format and not merely the affordable one.
+
+Character, visual and audio identity remain **unchanged** from v1.0. Retagged `bible-v1.2`.
+
 > **The one rule above all others:** Baby Eva Adventures is not a collection of AI videos. It is a
 > long-term children's property. A child must be able to hear four notes of the theme, or see a
 > lavender ear at the edge of frame, and know exactly what is coming. Consistency beats novelty in
@@ -34,7 +45,7 @@ locked at v1.0. Supersedes tag `bible-v1.0`; retagged `bible-v1.1`.
 | **Title** | Baby Eva Adventures |
 | **Logline** | A curious little plush mouse and her three friends turn every ordinary day into an adventure — and they need the children watching to help them finish it. |
 | **Format** | Animated 3D plush-toy world, episodic |
-| **Primary delivery** | YouTube / YouTube Kids — **16:9 landscape, 11:00 per episode** |
+| **Primary delivery** | YouTube / YouTube Kids — **16:9 landscape, 5:00 per episode, 768p** *(v1.2)* |
 | **Secondary delivery** | 9:16 vertical cut-downs for Shorts, derived from the 16:9 master as promo |
 | **Cadence** | Alternating FUN / LEARNING, odd episodes FUN, even episodes LEARNING |
 | **Signature phrase** | **"Come on, little adventurers!"** |
@@ -331,15 +342,16 @@ a child recognising the brand.
 
 **Selected 2026-09-26 by Brendon:** the main theme is **v2b, the call-and-response take**
 ([audio/theme-v2b-call-response.mp3](../audio/theme-v2b-call-response.mp3)). Its melody is now
-locked per rule 1 below. The two spare takes are assigned to the song breaks introduced in v1.1 —
-they share the theme's melodic family, so the episode stays musically unified rather than
-introducing new tunes:
+locked per rule 1 below.
 
 | Track | Use |
 |---|---|
-| **v2b — call and response** | **Main theme.** Titles (beat 2) and the goodbye reprise (beat 13) |
-| **v2c — clap-along** | Song break 1 (beat 6) — the movement song, mid-episode attention reset |
-| **v2a — chant** | Song break 2 (beat 12) — the celebration reprise after the solution |
+| **v2b — call and response** | **Main theme.** Titles (beat 2) and the goodbye (beat 10) |
+| **v2c — clap-along** | Held for the movement song. Not used at 5:00 *(v1.2)* |
+| **v2a — chant** | Held for celebration reprises. Not used at 5:00 *(v1.2)* |
+
+All three share a melodic family, so any future use stays musically unified. They are generated and
+paid for; keeping them costs nothing.
 
 | Cue | Purpose | Character |
 |---|---|---|
@@ -411,51 +423,45 @@ slightly plush.
 *(Amended v1.1 — was nine beats at 2:45–3:00. The beats survive; they are now distributed across a
 segmented 11:00 runtime.)*
 
-### Why 11:00
+### Why 5:00
 
 Episode length is a child-development decision, not a distribution one.
 
-- **Sustained attention** in this age band runs roughly **2–3 minutes per year of age** — about 6–9
-  minutes at three, 8–12 at four. A single unbroken 11-minute demand would exceed that.
-- **Segmentation is what actually sustains attention.** Children attend to what they *comprehend*,
-  and a predictable repeating structure lets attention reset rather than decay. Blue's Clues held 22
-  minutes on heavy repetition; Bluey runs 7. The variable is structure, not duration.
-- **11:00 is the preschool broadcast standard** — two per 22-minute slot — which matters for future
-  licensing and for compiled YouTube blocks.
+- **Sustained attention** in this age band runs roughly **2–3 minutes per year of age** — about 3–6
+  minutes at two, 6–9 at three. Our primary target is **1–4**, so 5:00 sits inside the window for
+  the whole audience rather than at the top of it for the oldest part.
+- **5:00 is Peppa Pig's length**, and Peppa is the dominant property in precisely this band. That is
+  not a coincidence.
+- **Structure still matters more than duration.** The episode must still give the child something to
+  do roughly every 40 seconds, or attention decays regardless of how short it is.
 
-So the episode is **three story segments with song breaks between them**, each segment carrying its
-own mini-cycle of setup → participation → resolution. No single demand on attention exceeds roughly
-two minutes before the child is either asked to do something or given a song.
-
-### The eleven-minute structure
+### The five-minute structure
 
 | # | Beat | In | Dur | Purpose |
 |---|---|---|---|---|
-| 1 | **COLD OPEN** | 0:00 | 0:25 | The star stirs. A hook before the titles. |
-| 2 | **TITLES** | 0:25 | 0:35 | Full theme song. Logo. The child settles in. |
-| 3 | **INTRODUCTION** | 1:00 | 0:45 | Eva greets the audience, names today's adventure. |
-| 4 | **PARTICIPATION** | 1:45 | 0:45 | Eva asks the children to come along. First interaction. |
-| 5 | **SEGMENT A — ADVENTURE** | 2:30 | 1:30 | The world opens up. Friends join. Exploration. |
-| 6 | **SONG BREAK 1** | 4:00 | 0:30 | Attention reset. Movement song. |
-| 7 | **SEGMENT B — CHALLENGE** | 4:30 | 1:30 | Danny, or a situation, creates the obstacle. |
-| 8 | **THINKING MOMENT** | 6:00 | 0:45 | "Stop… Think… Look!" Eva asks the audience. **Pause.** |
-| 9 | **SEGMENT C — THE SEARCH** | 6:45 | 1:45 | Looking together. The audience leads. |
-| 10 | **SOLUTION** | 8:30 | 1:00 | Solved together. Warm sparkle. |
-| 11 | **REINFORCEMENT** | 9:30 | 0:45 | The lesson, phrase or song repeats. |
-| 12 | **SONG BREAK 2** | 10:15 | 0:20 | Celebration reprise. |
-| 13 | **GOODBYE** | 10:35 | 0:25 | Closing song. Wave. Warm fade. Star dims. |
+| 1 | **COLD OPEN** | 0:00 | 0:20 | The star stirs. A hook before the titles. |
+| 2 | **TITLES** | 0:20 | 0:25 | Theme song. Logo. The child settles in. |
+| 3 | **INTRODUCTION** | 0:45 | 0:30 | Eva greets the audience, names today's adventure. |
+| 4 | **PARTICIPATION** | 1:15 | 0:25 | Eva asks the children to come along. First interaction. |
+| 5 | **ADVENTURE** | 1:40 | 0:45 | Friends join. Play. **The star is taken.** |
+| 6 | **CHALLENGE** | 2:25 | 0:35 | It's gone. Eva's wrong guesses. |
+| 7 | **THINKING MOMENT** | 3:00 | 0:30 | "Stop… Think… Look!" Eva asks the audience. **Pause.** |
+| 8 | **THE SEARCH** | 3:30 | 0:35 | Looking together. The audience leads. |
+| 9 | **SOLUTION** | 4:05 | 0:30 | Danny found. His soft moment. Star glows. |
+| 10 | **REINFORCEMENT + GOODBYE** | 4:35 | 0:25 | "We did it — together!" Wave. Star dims. |
 
-**Total 11:00.**
+**Total 5:00.**
 
 ### The rules that scale with it
 
-- **No segment exceeds 1:45** without an interaction or a song intervening.
-- **Tension still never exceeds 30 seconds** — unchanged from v1.0, and more important at length,
-  not less. A longer episode means more opportunities to breach it.
-- **One problem per episode still.** An 11-minute runtime is not permission for a subplot. The extra
-  time goes into *dwelling* — more exploration, more play, more looking — not more plot.
-- **The audience still knows before Eva does**, and the gap between their knowing and her finding
-  out can now run several minutes. This is the single biggest gain from the longer format.
+- **Something for the child to do every ~40 seconds.** At this length there is no room for a passive
+  stretch.
+- **Tension still never exceeds 30 seconds** — unchanged since v1.0.
+- **One problem per episode.** Unchanged, and now structurally enforced by the runtime.
+- **The audience still knows before Eva does.** At 5:00 the gap runs ~35 seconds rather than a
+  minute. Shorter, but it survives — and it is still the show's central pleasure.
+- **Song breaks are cut** *(v1.2)*. They were an 11:00 attention-reset device and are not needed at
+  this length. The spare music tracks remain assigned for future use.
 
 **The structure is a feature, not a limitation.** A child who has seen four episodes knows the
 thinking moment is coming and starts to prepare for it. That anticipation is engagement.
@@ -496,9 +502,9 @@ really being asked.
 
 ### Interaction budget
 
-**Twelve to fifteen interactive moments per episode**, spaced so no stretch of screen time runs
-longer than about 50 seconds without the child being addressed. *(Amended v1.1 — was four to six, at
-the 3:00 runtime. The per-minute density is unchanged; only the runtime grew.)*
+**Seven to nine interactive moments per episode**, spaced so no stretch of screen time runs longer
+than about 40 seconds without the child being addressed. *(Amended v1.2 for the 5:00 runtime. The
+per-minute density is unchanged across every version of this bible — only the runtime moves.)*
 
 Fewer and the child becomes passive; more and the moments stop feeling special. Density matters more
 than count: three questions in quick succession followed by four minutes of silence is worse than
