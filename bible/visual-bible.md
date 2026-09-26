@@ -1,14 +1,14 @@
 # VISUAL BIBLE
 
-**Version 0.9 · DRAFT — awaiting sign-off**
+**Version 1.0 · LOCKED 2026-09-26**
 
 Derived directly from the canonical sheets in [../reference/](../reference/). Where a value here
 disagrees with a generated image, the generated image is wrong.
 
-> **Not yet locked.** Locks together with [master-bible.md](master-bible.md) on Brendon's sign-off.
-> The palette and proportions below are already being used for generation and the Artlist style kit
-> is built from them — so a change here after locking means rebuilding the kit and rejecting any
-> shot already made. Raise corrections now, not later.
+> **LOCKED.** Signed off by Brendon 2026-09-26, tagged `bible-v1.0`, together with
+> [master-bible.md](master-bible.md). Every value below is now law for generation. The Artlist style
+> kit is built from this palette and these proportions, so any future change here means rebuilding
+> the kit and rejecting every shot already generated — amend deliberately or not at all.
 
 ---
 
