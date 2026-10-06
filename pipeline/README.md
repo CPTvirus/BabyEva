@@ -91,10 +91,40 @@ The pause protocol (master bible §12) is a manifest decision, not a code one: a
 `at: 0.5` on a shot whose `duration` is the line length plus three seconds is a pause. The script
 holds the frame. Nothing cuts.
 
-## What comes next in this folder
+## generate.py
 
-`generate.py`, once the accounts exist: reads the same manifest, and for any shot or line whose
-file is missing, calls the provider named in the shot (`fal` for stills and silent motion,
-`elevenlabs` for lines, `hedra` for talking shots from a still plus a line, `gemini` for Lyria
-songs), writes the file beside the manifest, and stops for the approval gate before anything is
-animated. Keys come from environment variables and never from this repo.
+```
+python pipeline/generate.py episodes/ep01-hello-im-eva/edit.json --dry-run
+python pipeline/generate.py episodes/ep01-hello-im-eva/edit.json                  # lines and stills
+python pipeline/generate.py episodes/ep01-hello-im-eva/edit.json --kinds motion,talking
+python pipeline/generate.py edit.json --only 5.5 --force                           # reroll one shot
+```
+
+Reads the same manifest and makes whatever file is missing. The approval gate is the file
+system: a pass makes lines and stills, a person looks at every still against the visual bible and
+deletes the ones that fail, the script is run again until every still on disk is approved, and
+only then `--kinds motion,talking` turns approved stills into clips. The default kinds exclude
+motion and talking for exactly that reason. `--force` on one id is a reroll.
+
+| Kind | Provider, 6 October 2026 | Input | Price on the Baby Eva fal account |
+|---|---|---|---|
+| line | ElevenLabs text to speech, `eleven_v3` | `voice` and `text` on the line, voice ids in `pipeline/voices.json` | inside the plan |
+| still | `fal-ai/nano-banana-2/edit` | `gen.prompt` plus the reference images (`gen.refs`, else the manifest `refs`), 2K | 8 US cents |
+| motion | `fal-ai/veo3.1/lite/image-to-video`, silent | an approved still in `gen.from`, 4, 6 or 8 seconds | 5 cents a second |
+| talking | `fal-ai/wan-25-preview/image-to-video` | an approved still in `gen.from` plus the first line's audio | 5 cents a second |
+
+Prompts can use `{EVA}`, `{RABIT}`, `{DANNY}`, `{BUNNY}`, `{STAR}` and `{EVAFACE}`, filled from the
+manifest's `locks` so the character blocks are pasted verbatim everywhere, as the visual bible
+requires. The manifest's `style_suffix` is appended to every still and motion prompt and
+`negative` goes to the video models. A motion or talking shot carries `from_gen`, the recipe for
+the still it starts from, so the still is generated in the still pass and the clip in the next.
+
+Keys come from `BABYEVA_FAL_KEY` and `BABYEVA_ELEVENLABS_API_KEY`, read from the environment or
+from a `.env` file passed with `--env`. Never from this repo.
+
+## design_voices.py
+
+Auditions the four voices on ElevenLabs, three previews each from the casting notes in the master
+bible, then creates the chosen ones on the account and prints the voice ids for
+`pipeline/voices.json`. ElevenLabs refuses a voice design described by a child's age, so the cast
+is described as cartoon characters performed by adults.

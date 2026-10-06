@@ -57,7 +57,7 @@
     { "id": "3.3", "file": "episodes/ep01-hello-im-eva/shots/sh3-3-eva-looks-up.mp4", "duration": 10,
       "gen": { "kind": "talking", "from": "episodes/ep01-hello-im-eva/shots/sh3-3-eva-looks-up.png",
         "from_gen": { "kind": "still", "refs": ["episodes/ep01-hello-im-eva/shots/sh1-1-evas-room-dawn.png", "reference/eva-model-sheet.jpg"],
-          "prompt": "{EVA} {EVAFACE} Standing below the shelf in Eva's Room from the reference image, looking up at {STAR} on the shelf with wonder, mouth closed. Three quarter view with her face large and clear, camera at her eye level, soft morning window light." },
+          "prompt": "{EVA} {EVAFACE} Medium close shot: Eva fills the lower right half of the frame, standing below the shelf in Eva's Room from the reference image, looking up at {STAR} glowing softly on the shelf in the upper left, with wonder, mouth closed. Her face is large and clear, at least a third of the frame height, three quarter view, camera at her eye level, soft morning window light." },
         "prompt": "Eva looks up at the star, then turns to camera and speaks with wonder, gentle movements, plush fur, camera locked off." },
       "lines": [ { "file": "episodes/ep01-hello-im-eva/voice/3-3-eva.mp3", "voice": "eva", "at": 0.6,
         "text": "It sleeps on my shelf. And when it glows, it means an adventure is starting!", "caption": "It sleeps on my shelf. And when it glows, it means an adventure is starting!" } ] },
@@ -126,7 +126,7 @@
 
     { "id": "5.6", "file": "episodes/ep01-hello-im-eva/shots/sh5-6-empty-wall.png", "duration": 3, "motion": "static",
       "gen": { "kind": "still", "refs": ["episodes/ep01-hello-im-eva/shots/sh5-1-garden-wide.png"],
-        "prompt": "The low stone and wood wall in the centre of the Garden from the reference image with nothing on it, one butterfly passing, golden morning light, eye level camera, locked off, calm, no characters." } },
+        "prompt": "Exactly the Garden from the reference image, the same low stone and wood wall centre foreground, the same wooden fence and gate behind it, the same flowerpots and watering can, with nothing on top of the wall, one butterfly passing, golden morning light, eye level camera, locked off, calm, no characters. Change nothing else about the scene." } },
 
     { "id": "6.1", "file": "episodes/ep01-hello-im-eva/shots/sh6-1-eva-where.mp4", "duration": 9,
       "gen": { "kind": "talking", "from": "episodes/ep01-hello-im-eva/shots/sh6-1-eva-puzzled.png",
@@ -186,7 +186,7 @@
 
     { "id": "8.2", "file": "episodes/ep01-hello-im-eva/shots/sh8-2-watering-can.png", "duration": 6, "motion": "push",
       "gen": { "kind": "still", "refs": ["episodes/ep01-hello-im-eva/shots/sh5-1-garden-wide.png", "reference/eva-model-sheet.jpg"],
-        "prompt": "A terracotta watering can standing on the grass by the fence in the Garden from the reference image, with {EVA} {EVAFACE} peeking into it from the side, only the top of her head, her ears and one eye visible above the rim, golden morning light, eye level camera, locked off." } },
+        "prompt": "Close shot at ground level: a large terracotta watering can standing on the grass fills the centre of the frame, in the Garden from the reference image with the fence soft behind it, and {EVA} {EVAFACE} peeking over its rim from behind, the top of her head, both ears and her big eyes visible above the rim, curious, golden morning light, locked off." } },
 
     { "id": "8.3", "file": "episodes/ep01-hello-im-eva/shots/sh8-3-something-green.mp4", "duration": 8,
       "gen": { "kind": "talking", "from": "episodes/ep01-hello-im-eva/shots/sh5-2b-eva-garden-cu.png",

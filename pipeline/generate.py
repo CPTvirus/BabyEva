@@ -229,7 +229,7 @@ def plan(manifest: dict, only: str | None, force: bool) -> list[dict]:
         # A motion or talking shot can carry the recipe for the still it starts from. The still
         # is generated first and must be approved on disk before the clip is made.
         if g.get("from_gen") and g["from"] not in seen_stills and (only in (None, sid)) \
-                and not Path(g["from"]).exists():
+                and (force or not Path(g["from"]).exists()):
             seen_stills.add(g["from"])
             jobs.append({"id": f"{sid}.still", "kind": "still", "shot": {"id": sid, "gen": g["from_gen"]},
                          "dest": Path(g["from"])})
@@ -259,6 +259,9 @@ def main() -> int:
     ap.add_argument("--env", type=Path, default=DEFAULT_ENV, help="a .env file with the keys")
     ap.add_argument("--voices", type=Path, default=Path(__file__).with_name("voices.json"))
     ap.add_argument("--only", help="a shot id, or <shot id>.line<n>")
+    ap.add_argument("--kinds", default="line,still",
+                    help="which kinds to run this pass, comma separated: line, still, motion, talking. "
+                         "Defaults to line,still so a clip is never made from a still nobody has approved yet.")
     ap.add_argument("--force", action="store_true", help="regenerate even if the file exists (a reroll)")
     ap.add_argument("--dry-run", action="store_true", help="list what would be generated and the estimated cost")
     args = ap.parse_args()
@@ -266,9 +269,10 @@ def main() -> int:
     load_env(args.env)
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
     voices = json.loads(args.voices.read_text(encoding="utf-8")) if args.voices.exists() else {}
-    jobs = plan(manifest, args.only, args.force)
+    kinds = {k.strip() for k in args.kinds.split(",") if k.strip()}
+    jobs = [j for j in plan(manifest, args.only, args.force) if j["kind"] in kinds]
     if not jobs:
-        print("nothing to generate, every file is on disk")
+        print("nothing to generate for these kinds, every file is on disk")
         return 0
 
     # Lines first, then stills, then anything that needs a still or a line on disk.
