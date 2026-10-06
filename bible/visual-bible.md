@@ -205,6 +205,8 @@ New locations require a bible entry before use.
 The show's recurring franchise object, introduced in Episode 1.
 
 - A soft plush five-pointed star, `#FFCE5A`, roughly the size of Eva's head, with a gentle inner glow
+- **No face.** Decided by Brendon on 6 October 2026 *(v1.3)*. It is an object, not a fifth character:
+  no eyes, no cheeks, no mouth, in any shot, in any episode. Its only expression is its glow
 - Lives on the shelf in Eva's Room
 - **It lights up when an adventure is ready to begin** — a warm pulse and a chime
 - It is the show's ritual device: most episodes open with a glance at the star and close with it

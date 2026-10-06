@@ -37,7 +37,7 @@ Decided by Brendon on 6 October 2026, recorded in `PRODUCTION-PIPELINE.md`. Chan
 watches on a TV. The 5:00 story episode stays the episode format. What changes is the release
 order: eight routine songs (2 to 3 minutes, 16:9, each with a 9:16 cut for parents) come before
 Episode 1, then compilations. Character, visual and audio identity are **unchanged**. The Adventure
-Star's face remains an open decision. Retagged `bible-v1.3`.
+Star is confirmed **faceless**, see visual bible §4. Retagged `bible-v1.3`.
 
 > **The one rule above all others:** Baby Eva Adventures is not a collection of AI videos. It is a
 > long-term children's property. A child must be able to hear four notes of the theme, or see a

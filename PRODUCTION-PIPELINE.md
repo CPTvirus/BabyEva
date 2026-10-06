@@ -104,7 +104,7 @@ Brendon's answers the same day:
 
 1. Songs first, Episode 1 second. **Yes.**
 2. Delivery **1080p**. Bibles amended to v1.3.
-3. The Adventure Star's face: still open, he asked for it explained. The two options are side by side in the Breazy brief.
+3. The Adventure Star's face: **faceless**, decided later the same day. Visual bible §4 now says so.
 4. The direct stack: **approved.**
 5. The remaining Artlist credits: **spend them on stills before they lapse.** The stills list is section 8.
 6. The show stays in **this repo**, Percy's.
