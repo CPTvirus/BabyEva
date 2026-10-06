@@ -98,9 +98,28 @@ YouTube terminated 16 templated AI channels in January 2026 under its inauthenti
 - A `voice-guide.md` with the four ElevenLabs voice IDs once they are designed and locked, since the bible already references the file.
 - The Adventure Star's face, faceless or sleeping, decided before the nine blocked shots are generated.
 
-## 7. Next
+## 7. Decisions taken 6 October 2026
 
-1. Decide sections 4 and 6.
-2. Set up fal.ai, Google AI Studio, ElevenLabs and Hedra on the brand account. Keys never enter this repo.
-3. Build the assembly script: script in, stills, clips and audio out, ffmpeg puts it together with the pauses and the ducking in both ratios.
-4. Produce song 1 end to end for under 10 USD. That is the proof.
+Brendon's answers the same day:
+
+1. Songs first, Episode 1 second. **Yes.**
+2. Delivery **1080p**. Bibles amended to v1.3.
+3. The Adventure Star's face: still open, he asked for it explained. The two options are side by side in the Breazy brief.
+4. The direct stack: **approved.**
+5. The remaining Artlist credits: **spend them on stills before they lapse.** The stills list is section 8.
+6. The show stays in **this repo**, Percy's.
+
+The assembler is built and verified, see `pipeline/README.md`. The generation half follows the accounts.
+
+## 8. Spending the remaining Artlist credits
+
+Artlist's credits expire at the end of each monthly cycle and go to zero when the subscription ends, and the downloads already in this repo prove generated files can be kept. Stills are the only thing worth buying there, at 130 credits for 2K against 8 cents direct. At roughly one rejection per approval, 13,000 credits is about 50 approved stills. In this order, through the Artlist MCP with the style kit and both reference sheets on every call, every prompt following the standing rules in `episodes/ep01-hello-im-eva/shots/README.md`:
+
+| Priority | Stills | Count | Why first |
+|---|---|---|---|
+| 1 | Talking portraits: each of the four characters, chest up, centred, mouth closed, neutral and happy, 16:9 at 2K | 8 | These are the start frames for every Hedra talking shot in every song and episode. Mouth closed matters, the audio opens it |
+| 2 | Eva's Bathroom, the new location for song 1, wide and at the sink | 2 | Added to the visual bible as a standing location in v1.3 |
+| 3 | The three cast stills the shot plan names: 5.2 Little Bunny, 5.3 Mr Rabit, 2.2 Danny | 3 | Proves the cast holds at 16:9 and the Mr Rabit and Little Bunny silhouette rule |
+| 4 | The rest of the Episode 1 shot plan stills, beat by beat | 27 | The pilot, once the songs have proven the pipeline |
+
+Then cancel Artlist. Anything left over after the list goes on song 2's bathroom and garden stills.

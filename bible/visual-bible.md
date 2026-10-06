@@ -6,6 +6,9 @@
 > **Amended v1.2:** delivery resolution is **768p**; episode runtime 5:00. Palette, proportions,
 > character locks and rejection criteria are **unchanged** throughout. See
 > [master-bible.md](master-bible.md) amendment log.
+> **Amended v1.3, 2026-10-06:** delivery resolution is **1080p**, and Eva's Bathroom joins the
+> standing locations for the routine songs. The production economics table below describes Artlist
+> credit prices; the direct prices that replace them are in `PRODUCTION-PIPELINE.md`.
 
 ### Production economics — read before generating anything
 
@@ -172,6 +175,7 @@ fur nap on characters, felt weave on props, grain on wood.
 | **The Garden** | Just outside Eva's room. Soft grass, oversized felt flowers, terracotta pots, a low wooden fence, butterflies. | Grass green, sky blue, accent pinks |
 | **The Meadow** | Open rolling ground with bokeh trees and a distant cottage. Where bigger adventures go. | Green, blue, warm gold |
 | **The Cosy Corner** | Green armchair, bookshelf, lamp, soft rug. For quiet beats, reading, the goodbye song. | Mint, cream, warm lamp gold |
+| **Eva's Bathroom** *(v1.3)* | Warm cream tiles with a soft mint band, a small sink at Eva's height with a round mirror, a wooden step stool, a deep rounded bath with a felt bath mat, a yellow rubber duck, soft towels on a low rail, morning light from a frosted window. For the brushing teeth and bath time songs. | Cream, soft mint, sky blue, star yellow accents |
 
 New locations require a bible entry before use.
 
@@ -283,8 +287,9 @@ realistic animal anatomy, fast motion blur
 
 - Duration: **5–8 seconds per shot** (generation sweet spot)
 - Aspect ratio: **16:9** *(amended v1.1)*
-- Resolution: **768p** delivery *(amended v1.2)* — default video model is **Hailuo 2.3 Fast
-  Standard**, `modelId` 2034, 6s @ 768p
+- Resolution: **1080p** delivery *(amended v1.3)*. Silent motion from an approved still on Veo 3.1
+  Lite or Hailuo 2.3 Fast; talking shots from an approved still plus the voice line on Hedra
+  Character-3. See `PRODUCTION-PIPELINE.md`
 - Motion: "slow gentle camera push", "locked off", "slow arc" — always specify, never leave to chance
 - Always pass `reference/eva-model-sheet.jpg` and/or `reference/cast-sheet.jpg` as image references
 - Apply the **Baby Eva Adventures** Artlist style kit to every generation
