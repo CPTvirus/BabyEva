@@ -1,0 +1,11 @@
+# Keys and the voice ids never enter this repo
+.env
+.env.*
+pipeline/voices.json
+
+# Render output. The approved stills, clips and lines in episodes/*/shots and episodes/*/voice
+# are committed on purpose, the assembled renders are rebuilt from them.
+episodes/*/renders/
+
+__pycache__/
+.DS_Store

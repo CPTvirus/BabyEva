@@ -31,6 +31,14 @@ the better format and not merely the affordable one.
 
 Character, visual and audio identity remain **unchanged** from v1.0. Retagged `bible-v1.2`.
 
+**v1.3 — 2026-10-06. Delivery 1080p. Routine songs released before the pilot.**
+Decided by Brendon on 6 October 2026, recorded in `PRODUCTION-PIPELINE.md`. Changes §1 only.
+768p was a credit saving on Artlist; on the direct stack the saving is a few cents and the audience
+watches on a TV. The 5:00 story episode stays the episode format. What changes is the release
+order: eight routine songs (2 to 3 minutes, 16:9, each with a 9:16 cut for parents) come before
+Episode 1, then compilations. Character, visual and audio identity are **unchanged**. The Adventure
+Star is confirmed **faceless**, see visual bible §4. Retagged `bible-v1.3`.
+
 > **The one rule above all others:** Baby Eva Adventures is not a collection of AI videos. It is a
 > long-term children's property. A child must be able to hear four notes of the theme, or see a
 > lavender ear at the edge of frame, and know exactly what is coming. Consistency beats novelty in
@@ -45,8 +53,9 @@ Character, visual and audio identity remain **unchanged** from v1.0. Retagged `b
 | **Title** | Baby Eva Adventures |
 | **Logline** | A curious little plush mouse and her three friends turn every ordinary day into an adventure — and they need the children watching to help them finish it. |
 | **Format** | Animated 3D plush-toy world, episodic |
-| **Primary delivery** | YouTube / YouTube Kids — **16:9 landscape, 5:00 per episode, 768p** *(v1.2)* |
-| **Secondary delivery** | 9:16 vertical cut-downs for Shorts, derived from the 16:9 master as promo |
+| **Primary delivery** | YouTube — **16:9 landscape, 1080p** *(v1.3)*. Routine songs 2:00 to 3:00, story episodes 5:00 |
+| **Secondary delivery** | 9:16 vertical cuts for parents on Shorts, TikTok, Reels and Facebook, centre cropped from the 16:9 master, never reframed |
+| **Release order** | Eight routine songs, then Episode 1, then 20 to 30 minute compilations *(v1.3)* |
 | **Cadence** | Alternating FUN / LEARNING, odd episodes FUN, even episodes LEARNING |
 | **Signature phrase** | **"Come on, little adventurers!"** |
 | **Theme hook** | **"Adventure starts with YOU!"** |

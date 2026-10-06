@@ -43,7 +43,10 @@ Learned from the shot 3.1 rejection. Every prompt, no exceptions:
 - Generate stills at **2K** — they cost 130 at every resolution, so there is no reason to go smaller,
   and the extra pixels give room to push and crop in the edit.
 
-## Open design question — the Adventure Star's face
+## Decided 6 October 2026: the Adventure Star has no face
+
+Brendon's call, recorded in the visual bible §4 at v1.3. The nine shots below generate faceless.
+The history, for the record:
 
 An early rejected still rendered the star with a **sleeping face** (closed eyes, blush, small smile).
 Charming, and it fits "settles back to a soft, sleepy dim" — but **not in the locked spec**, which
