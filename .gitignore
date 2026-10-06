@@ -9,3 +9,6 @@ episodes/*/renders/
 
 __pycache__/
 .DS_Store
+
+# Silence padded copies of lines, made by generate.py for Wan's three second minimum
+*.padded.wav
