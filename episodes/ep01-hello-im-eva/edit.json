@@ -114,7 +114,7 @@
       "gen": { "kind": "talking", "from": "episodes/ep01-hello-im-eva/shots/sh5-4-eva-star-wall.png",
         "from_gen": { "kind": "still", "refs": ["episodes/ep01-hello-im-eva/shots/sh5-1-garden-wide.png", "reference/eva-model-sheet.jpg"],
           "prompt": "{EVA} {EVAFACE} Placing {STAR} down on top of the low stone and wood wall in the centre of the Garden from the reference image, both paws on the star, looking at it fondly, mouth closed. Medium wide shot at her eye level so the wall and the star read clearly, golden morning light." },
-        "prompt": "Eva gently sets the star down on the wall and speaks softly to it, then turns away to watch a butterfly, plush fur, camera locked off." },
+        "prompt": "Eva keeps facing the camera the whole time, pats the star gently on the wall with one paw and speaks softly to it, a small fond smile, then glances up at a passing butterfly without turning her body, plush fur, camera locked off." },
       "lines": [ { "file": "episodes/ep01-hello-im-eva/voice/5-4-eva.mp3", "voice": "eva", "at": 0.5,
         "text": "I'll just put you there for a moment.", "caption": "I'll just put you there for a moment." } ] },
 
