@@ -1,0 +1,7 @@
+{
+  "_comment": "Copy to voices.json and fill the ElevenLabs voice ids once the four voices are designed and locked. voices.json is gitignored. The casting notes are in the master bible section 7.",
+  "eva":    { "voice_id": "PUT_ELEVENLABS_VOICE_ID_HERE", "model_id": "eleven_v3", "settings": { "stability": 0.5, "similarity_boost": 0.8, "style": 0.3 } },
+  "rabit":  { "voice_id": "PUT_ELEVENLABS_VOICE_ID_HERE", "model_id": "eleven_v3", "settings": { "stability": 0.6, "similarity_boost": 0.8, "style": 0.2 } },
+  "danny":  { "voice_id": "PUT_ELEVENLABS_VOICE_ID_HERE", "model_id": "eleven_v3", "settings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.5 } },
+  "bunny":  { "voice_id": "PUT_ELEVENLABS_VOICE_ID_HERE", "model_id": "eleven_v3", "settings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.4 } }
+}
