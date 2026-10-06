@@ -155,13 +155,16 @@ def gen_talking(client, shot: dict, manifest: dict, dest: Path) -> None:
         if not p.exists():
             raise FileNotFoundError(f"talking shot {shot.get('id')} needs {p}")
     length = probe_duration(audio)
-    if length < 3.2:
-        # Wan wants at least 3 seconds of audio. A short line gets silence after it, which is
-        # also exactly what the pause protocol wants: the character keeps listening.
+    # gen.seconds asks for a clip longer than the line, so the character keeps moving, blinking
+    # and listening through the pause instead of freezing on the last frame. Wan needs at least
+    # three seconds of audio either way, so a short line gets silence after it.
+    want = float(g.get("seconds", 0))
+    target = max(3.5, min(want, 10.0)) if want else 3.5
+    if length < target - 0.3:
         padded = audio.with_name(audio.stem + ".padded.wav")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(audio), "-af",
-                        "apad=whole_dur=3.5", str(padded)], check=True)
-        audio, length = padded, 3.5
+                        f"apad=whole_dur={target}", str(padded)], check=True)
+        audio, length = padded, target
     if length > 10:
         print(f"  warning: line is {length:.1f}s, Wan keeps the first 10 seconds only", file=sys.stderr)
     duration = 5 if length <= 5 else 10

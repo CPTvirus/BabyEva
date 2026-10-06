@@ -19,6 +19,7 @@ Needs Python 3.10+ and ffmpeg/ffprobe on PATH. No other dependencies.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import subprocess
 import sys
@@ -111,11 +112,36 @@ def caption_filters(shot: dict, manifest: dict, w: int, h: int, tmp: Path, idx: 
     return filters
 
 
+CACHE_VERSION = "1"  # bump when the way a shot is rendered changes
+
+
+def shot_key(shot: dict, manifest: dict, w: int, h: int, fps: int) -> str:
+    """Everything that decides what a rendered shot looks like. Same key, same pixels."""
+    def stamp(p: str) -> list:
+        st = Path(p).stat()
+        return [p, st.st_mtime_ns, st.st_size]
+    spec = {
+        "v": CACHE_VERSION, "src": stamp(shot["file"]), "duration": float(shot["duration"]),
+        "motion": shot.get("motion", "push"), "size": [w, h, fps],
+        "captions": bool(manifest.get("captions", True)), "font": manifest.get("font", ""),
+        "embedded": bool(shot.get("_embedded")),
+        "lines": [[l.get("caption"), l.get("at", 0.5), stamp(l["file"])] for l in shot.get("lines", [])],
+    }
+    return hashlib.sha1(json.dumps(spec, sort_keys=True).encode("utf-8")).hexdigest()[:20]
+
+
 def render_shot(shot: dict, manifest: dict, w: int, h: int, fps: int, tmp: Path, idx: int) -> Path:
     src = Path(shot["file"])
     # Captions are rendered per ratio, so the wrap width above is recomputed on every call.
     duration = float(shot["duration"])
-    out = tmp / f"seg-{idx:03d}.mp4"
+    # Rendered shots are kept beside the output, keyed by everything that shapes them, so a
+    # second render only redoes the shots that changed. A one shot fix takes a minute, not twenty.
+    cache = Path(manifest["output"]).resolve().parent / ".cache" / f"{w}x{h}"
+    cache.mkdir(parents=True, exist_ok=True)
+    out = cache / f"{shot_key(shot, manifest, w, h, fps)}.mp4"
+    if out.exists() and out.stat().st_size > 0:
+        return out
+    part = out.with_suffix(".part.mp4")
     vf: list[str]
     cmd = ["ffmpeg", "-v", "error", "-y"]
     if src.suffix.lower() in VIDEO_EXT:
@@ -139,8 +165,9 @@ def render_shot(shot: dict, manifest: dict, w: int, h: int, fps: int, tmp: Path,
     vf += caption_filters(shot, manifest, w, h, tmp, idx)
     vf += ["format=yuv420p"]
     cmd += ["-t", f"{duration:.3f}", "-vf", ",".join(vf), "-an",
-            "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", str(fps), str(out)]
+            "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", str(fps), str(part)]
     run(cmd)
+    part.replace(out)  # only a finished render ever gets the cache name
     return out
 
 
