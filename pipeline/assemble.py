@@ -274,6 +274,12 @@ def main() -> int:
     ap.add_argument("--keep-tmp", action="store_true", help="keep the per shot segments for inspection")
     args = ap.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
+    # A shot marked "parked": true is written and waiting to be generated. It stays out of the cut
+    # until someone removes the flag, so a missing clip is always a decision and never an accident.
+    parked = [str(s.get("id")) for s in manifest["shots"] if s.get("parked")]
+    if parked:
+        print("parked, not in this cut: " + ", ".join(parked))
+    manifest["shots"] = [s for s in manifest["shots"] if not s.get("parked")]
     missing = [s["file"] for s in manifest["shots"] if not Path(s["file"]).exists()]
     missing += [l["file"] for s in manifest["shots"] for l in s.get("lines", []) if not Path(l["file"]).exists()]
     if manifest.get("music") and not Path(manifest["music"]["file"]).exists():

@@ -84,7 +84,7 @@
     {
       "id": "2.1",
       "file": "episodes/ep01-hello-im-eva/shots/sh2-1-title-rabit-bunny.mp4",
-      "duration": 8,
+      "duration": 8.0,
       "gen": {
         "kind": "motion",
         "seconds": 8,
@@ -217,7 +217,7 @@
     {
       "id": "3.4",
       "file": "episodes/ep01-hello-im-eva/shots/sh3-4-star-lights-up.mp4",
-      "duration": 5,
+      "duration": 6.0,
       "gen": {
         "kind": "motion",
         "seconds": 6,
@@ -229,7 +229,7 @@
         {
           "file": "episodes/ep01-hello-im-eva/voice/3-4-eva.mp3",
           "voice": "eva",
-          "at": 1.2,
+          "at": 1.0,
           "text": "[gasps] Ooh! It's glowing! An adventure is starting!",
           "caption": "Ooh! It's glowing! An adventure is starting!"
         }
@@ -284,7 +284,7 @@
     {
       "id": "4.3",
       "file": "episodes/ep01-hello-im-eva/shots/sh4-3-come-on.mp4",
-      "duration": 5.0,
+      "duration": 3.0,
       "gen": {
         "kind": "talking",
         "from": "episodes/ep01-hello-im-eva/shots/sh4-3-eva-holds-star.png",
@@ -311,7 +311,7 @@
     {
       "id": "4.4",
       "file": "episodes/ep01-hello-im-eva/shots/sh4-4-eva-steps-out.mp4",
-      "duration": 6,
+      "duration": 4.0,
       "gen": {
         "kind": "motion",
         "seconds": 6,
@@ -582,19 +582,20 @@
     },
     {
       "id": "6.3c",
-      "file": "episodes/ep01-hello-im-eva/shots/sh6-3c-danny-whats-wrong.mp4",
-      "duration": 5,
+      "file": "episodes/ep01-hello-im-eva/shots/sh6-3c-rabit-whats-wrong.mp4",
+      "duration": 3.4,
       "gen": {
         "kind": "talking",
-        "from": "episodes/ep01-hello-im-eva/shots/sh9-1-danny-caught.png",
-        "prompt": "The dinosaur hiding behind the tiny flowerpot hugs the star, grins at the camera and calls out in an innocent sing-song voice, then giggles quietly with a finger to his lips, plush fur, camera locked off."
+        "from": "episodes/ep01-hello-im-eva/shots/sh5-3-rabit-kneeling.png",
+        "prompt": "Mr Rabit kneeling at a child's height leans in gently and asks a kind question with concern and warmth, a small tilt of the head, plush fur, camera locked off.",
+        "made_on": "Artlist OmniHuman 1.5, 720 credits, 6 October 2026, because fal was out of credit"
       },
       "lines": [
         {
-          "file": "episodes/ep01-hello-im-eva/voice/6-3c-danny.mp3",
-          "voice": "danny",
+          "file": "episodes/ep01-hello-im-eva/voice/6-3c-rabit.mp3",
+          "voice": "rabit",
           "at": 0.0,
-          "text": "[playful, sing-song] What's wrong, Eva? [giggles]",
+          "text": "What's wrong, Eva?",
           "caption": "What's wrong, Eva?"
         }
       ]
@@ -621,7 +622,7 @@
     {
       "id": "6.4",
       "file": "episodes/ep01-hello-im-eva/shots/sh6-4-eva-sits-rabit.mp4",
-      "duration": 6,
+      "duration": 4,
       "gen": {
         "kind": "motion",
         "seconds": 6,
@@ -637,15 +638,7 @@
           "prompt": "{EVA} seen from behind over her shoulder, sitting on the grass in the Garden from the reference image, thinking, and {RABIT} kneeling down beside her with a hand on her shoulder, his kind face in three quarter view, mouth closed. Wide shot, golden morning light, both faces turned slightly away from the lens."
         }
       },
-      "lines": [
-        {
-          "file": "episodes/ep01-hello-im-eva/voice/6-4-eva.mp3",
-          "voice": "eva",
-          "at": 0.8,
-          "text": "It's not there either.",
-          "caption": "It's not there either."
-        }
-      ]
+      "lines": []
     },
     {
       "id": "7.1",
@@ -697,20 +690,20 @@
     {
       "id": "7.3",
       "file": "episodes/ep01-hello-im-eva/shots/sh7-3-can-you-help.mp4",
-      "duration": 5.0,
+      "duration": 3.5,
       "gen": {
         "kind": "talking",
         "from": "episodes/ep01-hello-im-eva/shots/sh5-2b-eva-garden-cu.png",
         "prompt": "Eva looks straight into the lens, hopeful, asks for help, then holds still, listening, blinking, leaning in slightly, plush fur, camera locked off.",
-        "seconds": 8
+        "made_on": "Artlist OmniHuman 1.5, 720 credits, 6 October 2026, because fal was out of credit"
       },
       "lines": [
         {
           "file": "episodes/ep01-hello-im-eva/voice/7-3-eva.mp3",
           "voice": "eva",
           "at": 0.5,
-          "text": "Can you help me? Where should we look?",
-          "caption": "Can you help me? Where should we look?"
+          "text": "Can you help me look?",
+          "caption": "Can you help me look?"
         }
       ]
     },
@@ -735,22 +728,23 @@
     },
     {
       "id": "8.2",
-      "file": "episodes/ep01-hello-im-eva/shots/sh8-2-watering-can.mp4",
+      "parked": true,
+      "file": "episodes/ep01-hello-im-eva/shots/sh8-2-look-from-a-distance.mp4",
       "duration": 6,
       "gen": {
         "kind": "motion",
         "seconds": 6,
         "resolution": "1080p",
-        "from": "episodes/ep01-hello-im-eva/shots/sh8-2-watering-can.png",
-        "prompt": "The little mouse peeking over the rim of the watering can looks left and right, blinks, then pops up a little higher with her ears wiggling, curious. Gentle, camera locked off.",
+        "from": "episodes/ep01-hello-im-eva/shots/sh8-2-look-from-a-distance.png",
         "from_gen": {
           "kind": "still",
           "refs": [
             "episodes/ep01-hello-im-eva/shots/sh5-1-garden-wide.png",
-            "reference/eva-model-sheet.jpg"
+            "reference/cast-sheet.jpg"
           ],
-          "prompt": "Close shot at ground level: a large terracotta watering can standing on the grass fills the centre of the frame, in the Garden from the reference image with the fence soft behind it, and {EVA} {EVAFACE} peeking over its rim from behind, the top of her head, both ears and her big eyes visible above the rim, curious, golden morning light, locked off."
-        }
+          "prompt": "{EVA} {EVAFACE} and {BUNNY} standing together, staggered in depth, seen from behind at a three quarter angle, a few steps away from a terracotta flowerpot beside the garden gate in the Garden from the reference image. Both lean forward and peer toward the flowerpot from a distance. A green plush dinosaur tail with soft purple spikes is just visible sticking out behind the pot. Wide shot at their eye level so the friends, the grass between, and the far flowerpot all read clearly, golden morning light."
+        },
+        "prompt": "The little mouse and the little bunny tiptoe one step closer and lean forward to peer at the far flowerpot from a distance, then glance at each other, the tail behind the pot twitches once. Gentle and smooth, the flowerpot stays upright and still, camera locked off."
       }
     },
     {
@@ -802,7 +796,7 @@
     {
       "id": "8.4",
       "file": "episodes/ep01-hello-im-eva/shots/sh8-4-pot-tail.mp4",
-      "duration": 6,
+      "duration": 6.0,
       "gen": {
         "kind": "motion",
         "seconds": 6,
@@ -822,7 +816,7 @@
         {
           "file": "episodes/ep01-hello-im-eva/voice/8-4-eva.mp3",
           "voice": "eva",
-          "at": 0.5,
+          "at": 0.29,
           "text": "[whispers] Should we look behind it? One... two... three!",
           "caption": "Should we look behind it? One... two... three!"
         }
