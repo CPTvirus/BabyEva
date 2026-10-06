@@ -25,15 +25,23 @@ from generate import DEFAULT_ENV, load_env, need  # noqa: E402
 
 API = "https://api.elevenlabs.io/v1"
 
+# The show's voice theme, Brendon, 6 October 2026: a voice that hooks a two year old is warm,
+# musical and full of energy without ever getting loud. Every description below starts from it.
+THEME = (
+    "Warm, musical and full of energy without ever getting loud. Studio quality, smooth and clean, "
+    "no harshness, no screech, no shouting. Expressive rises and falls like singing speech, an audible "
+    "smile, a lively rhythm that pulls a small child in and keeps them listening. "
+)
+
 CAST = {
     "eva": {
         # ElevenLabs blocks voice designs described by age, so the cast is described as cartoon
         # characters performed by adults, which is what every preschool show actually does.
-        "description": (
-            "A warm, gentle, youthful cartoon character voice for an animated plush mouse, performed by an adult "
-            "female voice actor, light and high pitched, bright mid range and soft, speaking slowly with real pauses "
-            "and an audible smile, breathy warmth, clear simple words, never shrieky, never sarcastic. "
-            "Neutral clear English accent. Brave and a little unsure at the same time."
+        "description": THEME + (
+            "A youthful cartoon character voice for an animated plush mouse, performed by an adult female voice "
+            "actor: light, bright and sweet, mid to high pitched, playful and curious, with gentle warmth under the "
+            "energy, clear simple words, never sarcastic. Neutral clear English accent. Brave and a little unsure "
+            "at the same time."
         ),
         "text": (
             "Hello! I'm Eva. I'm so happy you came. Look, this is my Adventure Star. It sleeps on my shelf, "
@@ -42,10 +50,12 @@ CAST = {
         ),
     },
     "rabit": {
-        "description": (
-            "A kind grandfatherly male voice in his sixties, low to mid range, warm and unhurried, slow and patient, "
-            "with gentle amusement in it, the sound of a grown up kneeling down to a child's height. Never stern, "
-            "never lecturing. Neutral clear English accent, soft and reassuring."
+        # Second pass, 6 October 2026: the first Mr Rabit was too slow and sleepy. He is warm and
+        # mature, but he is also the most engaging voice in the show, a storyteller with a twinkle.
+        "description": THEME + (
+            "A charismatic, mature male storyteller voice, rich and smooth, like a beloved children's television "
+            "presenter: lively and engaging with a twinkle of humour, kind and encouraging, medium pace, "
+            "never slow, never sleepy, never stern. Neutral clear English accent."
         ),
         "text": (
             "Good morning, you two. And good morning to all our friends watching. When something is lost, Eva, "
@@ -54,11 +64,10 @@ CAST = {
         ),
     },
     "danny": {
-        "description": (
-            "A playful, boisterous cartoon character voice for a big friendly plush dinosaur, performed by an adult "
-            "male voice actor doing a youthful, mid range, rounded voice, bouncy and a little irregular, with a big "
-            "grin in the voice and comic timing, secretly soft and shy underneath. Never scary, never mean. "
-            "Neutral clear English accent."
+        "description": THEME + (
+            "A playful cartoon character voice for a big friendly plush dinosaur, performed by an adult male voice "
+            "actor doing a youthful, mid range, rounded voice, bouncy with a big grin in it and comic timing, "
+            "secretly soft and shy underneath. Never scary, never mean, never gruff. Neutral clear English accent."
         ),
         "text": (
             "Hello. ... I just wanted you to come and find me. Really? Can I play too? I'm the biggest, so I'll hide "
@@ -66,10 +75,10 @@ CAST = {
         ),
     },
     "bunny": {
-        "description": (
+        "description": THEME + (
             "A sweet, bubbly cartoon character voice for a tiny plush bunny, performed by an adult female voice "
-            "actor, very high and bright, quick and giggly with upward inflections, loyal and encouraging, full of "
-            "energy, never shrieky. Clearly higher, faster and brighter than the gentle mouse character. "
+            "actor, high and bright, quick and giggly with upward inflections, loyal and encouraging, "
+            "clearly higher, faster and brighter than the gentle mouse character, never shrill. "
             "Neutral clear English accent."
         ),
         "text": (

@@ -42,6 +42,15 @@ def probe_duration(path: Path) -> float:
     return float(out)
 
 
+def has_audio(path: Path) -> bool:
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=codec_type",
+         "-of", "csv=p=0", str(path)],
+        check=True, capture_output=True, text=True,
+    ).stdout.strip()
+    return bool(out)
+
+
 def ff_path(path: Path) -> str:
     """Escape a path for use inside an ffmpeg filter option (Windows colons and backslashes)."""
     return str(path.resolve()).replace("\\", "/").replace(":", "\\:")
@@ -82,7 +91,8 @@ def caption_filters(shot: dict, manifest: dict, w: int, h: int, tmp: Path, idx: 
         size = int(min(w, h) * 0.05)
         per_line = max(12, int(w * 0.9 / (size * 0.56)))
         rows = textwrap.wrap(text, width=per_line) or [text]
-        start = float(line.get("at", 0.5))
+        # A talking clip carries its own line from frame zero, so its caption starts at zero too.
+        start = 0.0 if (shot.get("_embedded") and n == 0) else float(line.get("at", 0.5))
         end = start + probe_duration(Path(line["file"]))
         # One drawtext per row, stacked upward from the same baseline, so no newline ever
         # reaches drawtext (ffmpeg 8 draws a missing glyph box for it).
@@ -141,7 +151,19 @@ def build_audio_graph(manifest: dict, starts: list[float], total: float) -> tupl
     n_in = 1  # input 0 is the concatenated video
     line_labels = []
     for shot, start in zip(manifest["shots"], starts):
-        for line in shot.get("lines", []):
+        if shot.get("_embedded"):
+            # The clip was generated from its line, so the clip's own audio is the line, in sync
+            # by construction. Use it, trimmed to the shot, and skip the separate line file.
+            ms = int(start * 1000)
+            inputs += ["-i", str(Path(shot["file"]))]
+            label = f"l{len(line_labels)}"
+            parts.append(f"[{n_in}:a]aresample=48000,aformat=channel_layouts=stereo,"
+                         f"atrim=0:{float(shot['duration']):.3f},adelay={ms}|{ms}[{label}]")
+            line_labels.append(label)
+            n_in += 1
+        for k, line in enumerate(shot.get("lines", [])):
+            if shot.get("_embedded") and k == 0:
+                continue
             at = start + float(line.get("at", 0.5))
             ms = int(at * 1000)
             inputs += ["-i", str(Path(line["file"]))]
@@ -186,6 +208,9 @@ def render(manifest: dict, ratio: str, keep_tmp: bool) -> Path:
     tmp = Path(tempfile.mkdtemp(prefix=f"babyeva-{ratio}-"))
     try:
         segments, starts, t = [], [], 0.0
+        for shot in manifest["shots"]:
+            src = Path(shot["file"])
+            shot["_embedded"] = bool(shot.get("lines")) and src.suffix.lower() in VIDEO_EXT and has_audio(src)
         for i, shot in enumerate(manifest["shots"]):
             print(f"  [{ratio}] shot {shot.get('id', i)}  {shot['duration']}s  {Path(shot['file']).name}")
             segments.append(render_shot(shot, manifest, w, h, fps, tmp, i))
